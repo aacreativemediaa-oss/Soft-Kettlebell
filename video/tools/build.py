@@ -466,7 +466,7 @@ def scenes():
         <div class="hd hero y" style="opacity:1;">MURAH!</div>
       </div>
     </div>
-    <div class="col up" style="top: 1390px; gap: 0;">
+    <div style="position:absolute; left: 40px; top: 1390px; display:flex; flex-direction:column; align-items:flex-start;">
       <div id="g10-a1" style="opacity:0">{ARROW_SVG}</div>
       <div id="g10-a2" style="opacity:0; margin-top: -24px;">{ARROW_SVG}</div>
     </div>"""
