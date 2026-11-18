@@ -61,3 +61,11 @@ A caption is hidden for every clause a graphic already writes out (`HIDE` in `to
 - The VO is quiet (−30 LUFS). It was kept at 100 % as asked; if the platform level matters, normalise the final mix rather than the VO.
 
 - c08 (41.45–49.10 s) has the loudest ambient sound of the chosen clips; at the required 30 % it sits close to the VO level. Lower it only if you want — the brief fixes 30 %.
+
+## Final delivery (approved by client)
+
+- File: `renders/soft-kettlebell-FINAL-1080x1920-60fps.mp4` (not in git: 167 MB; re-render with `npx hyperframes render --fps 60 --quality delivery -o renders/<name>.mp4`).
+- H.264 1080×1920, 60 fps, 3555 frames, 59.25 s; AAC 48 kHz. Mix −29.5 LUFS, peak −11.2 dBFS (VO untouched at 100 %).
+- VO sync vs. original: 0 ms lag in every 5 s window.
+- Client changes applied: CTA "Link beg kuning"; yellow-basket arrows moved to the far left; fact images for afterburn and testosteron.
+- Kept as delivered (not changed by client): "dan repost", "sado", "abang gym", "lenguh"; c08 footage sound at 30 %.
