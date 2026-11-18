@@ -1,0 +1,57 @@
+<template>
+  <style>
+@font-face { font-family: 'Anton'; src: url('assets/fonts/Anton-Regular.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Montserrat'; src: url('assets/fonts/Montserrat-Variable.woff2') format('woff2'); font-weight: 100 900; }
+
+#root { position: absolute; inset: 0; pointer-events: none; }
+.cg { position: absolute; left: 0; right: 0; top: 1150px; display: flex; justify-content: center; opacity: 0; overflow: visible; }
+.cl { font-family: 'Anton', sans-serif; font-size: 60px; line-height: 1.1; text-transform: uppercase;
+      text-align: center; color: #fff; -webkit-text-stroke: 9px #0B0B0B; paint-order: stroke fill;
+      letter-spacing: 1px; white-space: nowrap; text-shadow: 0 6px 0 rgba(0,0,0,.45); }
+.w { display: inline-block; margin: 0 7px; }
+.w.k { color: #39FF14; }
+
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920" data-layout-allow-safe-zone>
+    <div id="cg0" class="cg" data-s="2.3" data-e="2.94"><div class="cl"><span id="cw0" class="w" data-s="2.3" data-e="2.62">JOM</span> <span id="cw1" class="w" data-s="2.62" data-e="2.94">CUBA</span></div></div>
+    <div id="cg1" class="cg" data-s="2.99" data-e="3.63"><div class="cl"><span id="cw2" class="w" data-s="2.99" data-e="3.31">KAT</span> <span id="cw3" class="w k" data-s="3.31" data-e="3.63">RUMAH!</span></div></div>
+    <div id="cg2" class="cg" data-s="6.2" data-e="6.92"><div class="cl"><span id="cw4" class="w" data-s="6.2" data-e="6.52">PEGANG</span> <span id="cw5" class="w k" data-s="6.52" data-e="6.92">KETTLEBELL</span></div></div>
+    <div id="cg3" class="cg" data-s="6.97" data-e="7.61"><div class="cl"><span id="cw6" class="w" data-s="6.97" data-e="7.29">DEPAN</span> <span id="cw7" class="w k" data-s="7.29" data-e="7.61">DADA</span></div></div>
+    <div id="cg4" class="cg" data-s="7.7" data-e="8.38"><div class="cl"><span id="cw8" class="w" data-s="7.7" data-e="8.02">TURUN,</span> <span id="cw9" class="w k" data-s="8.02" data-e="8.38">PUNGGUNG</span></div></div>
+    <div id="cg5" class="cg" data-s="8.43" data-e="9.11"><div class="cl"><span id="cw10" class="w" data-s="8.43" data-e="8.75">KE</span> <span id="cw11" class="w" data-s="8.75" data-e="9.11">BELAKANG</span></div></div>
+    <div id="cg6" class="cg" data-s="12.9" data-e="13.88"><div class="cl"><span id="cw12" class="w" data-s="12.9" data-e="13.24">ASALKAN</span> <span id="cw13" class="w k" data-s="13.24" data-e="13.56">FORM</span> <span id="cw14" class="w" data-s="13.56" data-e="13.88">BETUL</span></div></div>
+    <div id="cg7" class="cg" data-s="16.1" data-e="17.08"><div class="cl"><span id="cw15" class="w k" data-s="16.1" data-e="16.44">LANGKAH</span> <span id="cw16" class="w" data-s="16.44" data-e="16.76">KE</span> <span id="cw17" class="w" data-s="16.76" data-e="17.08">DEPAN</span></div></div>
+    <div id="cg8" class="cg" data-s="17.3" data-e="18.0"><div class="cl"><span id="cw18" class="w" data-s="17.3" data-e="17.62">TURUN</span> <span id="cw19" class="w" data-s="17.62" data-e="18.0">PERLAHAN,</span></div></div>
+    <div id="cg9" class="cg" data-s="18.05" data-e="18.69"><div class="cl"><span id="cw20" class="w k" data-s="18.05" data-e="18.37">TOLAK</span> <span id="cw21" class="w" data-s="18.37" data-e="18.69">BALIK</span></div></div>
+    <div id="cg10" class="cg" data-s="26.1" data-e="27.06"><div class="cl"><span id="cw22" class="w" data-s="26.1" data-e="26.42">KAKI</span> <span id="cw23" class="w" data-s="26.42" data-e="26.74">BUKA</span> <span id="cw24" class="w k" data-s="26.74" data-e="27.06">LEBAR</span></div></div>
+    <div id="cg11" class="cg" data-s="27.4" data-e="28.44"><div class="cl"><span id="cw25" class="w k" data-s="27.4" data-e="27.8">KETTLEBELL</span> <span id="cw26" class="w" data-s="27.8" data-e="28.12">DI</span> <span id="cw27" class="w" data-s="28.12" data-e="28.44">TENGAH</span></div></div>
+    <div id="cg12" class="cg" data-s="36.7" data-e="37.66"><div class="cl"><span id="cw28" class="w k" data-s="36.7" data-e="37.02">PICIT</span> <span id="cw29" class="w" data-s="37.02" data-e="37.34">PUN</span> <span id="cw30" class="w" data-s="37.34" data-e="37.66">BOLEH!</span></div></div>
+  </div>
+  <script>
+    (function () {
+      // Each group: in at its first word, hard kill after its last word (or when the next group starts).
+      // Active word turns yellow; keywords stay neon green and pop while spoken.
+      const tl = gsap.timeline({ paused: true });
+      const groups = Array.from(document.querySelectorAll("[data-composition-id=captions] .cg"));
+      groups.forEach((g, i) => {
+        const s = parseFloat(g.dataset.s), e = parseFloat(g.dataset.e);
+        const next = groups[i + 1] ? parseFloat(groups[i + 1].dataset.s) : Infinity;
+        const tIn = Math.max(0.05, s - 0.06);
+        const tOut = Math.min(e + 0.45, next - 0.04);
+        tl.fromTo(g, { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.1, ease: "back.out(2)" }, tIn);
+        tl.set(g, { opacity: 0, visibility: "hidden" }, tOut);
+        g.querySelectorAll(".w").forEach((w) => {
+          const ws = parseFloat(w.dataset.s), we = Math.min(parseFloat(w.dataset.e), tOut - 0.02);
+          if (w.classList.contains("k")) {
+            tl.fromTo(w, { scale: 1 }, { scale: 1.08, duration: 0.08, ease: "power2.out" }, ws);
+            tl.to(w, { scale: 1, duration: 0.12, ease: "power2.in" }, Math.max(ws + 0.09, we - 0.06));
+          } else {
+            tl.set(w, { color: "#FFE600" }, ws);
+            tl.set(w, { color: "#ffffff" }, Math.max(ws + 0.05, we));
+          }
+        });
+      });
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>
