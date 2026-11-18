@@ -277,7 +277,19 @@ def scenes():
 
     # ---------------- g03 masa + selepas workout, afterburn (12.45 - 19.05)
     st, du = win("c03")
-    m = f"""    <div class="col" style="top: 840px; gap: 26px;">
+    # Fact image: EPOC diagram (Wikimedia Commons, CC BY-SA 4.0 - credit on screen).
+    # Highlights sit over its "Exercise time" (19-62 % of width) and "Recovery time" (62-97 %) areas.
+    m = f"""    <div class="row up" style="top: 318px;">
+      <div id="g03-fig" class="card" style="background:#fff; border-color:{INK}; padding: 14px 14px 10px; width: 724px;">
+        <div style="position: relative; width: 686px; height: 404px;">
+          <img src="assets/images/epoc-diagram.jpg" alt="EPOC diagram" style="position:absolute; left:0; top:0; width: 686px; height: 404px; border-radius: 14px;">
+          <div id="g03-h1" class="hl" style="left: 18.5%; width: 44%;"></div>
+          <div id="g03-h2" class="hl" style="left: 61.8%; width: 36.5%;"></div>
+        </div>
+        <div class="credit" data-layout-ignore>Rajah EPOC: Henoktade / Wikimedia Commons, CC BY-SA 4.0</div>
+      </div>
+    </div>
+    <div class="col" style="top: 840px; gap: 26px;">
       <div id="g03-c1" class="pill white" style="font-size: 42px;">{CHECK_SVG}Masa workout</div>
       <div id="g03-c2" class="pill white" style="font-size: 42px;">{CHECK_SVG}Selepas workout</div>
     </div>
@@ -286,15 +298,23 @@ def scenes():
       <div id="g03-t2" class="hd head">EFFECT</div>
     </div>"""
     css = f"""
+.hl {{ position: absolute; top: 3%; height: 82%; border: 7px solid {PINK}; border-radius: 16px;
+      background: rgba(255,61,139,.12); opacity: 0; }}
+.hlt {{ position: absolute; left: 50%; top: -30px; margin-left: -110px; width: 220px; text-align: center;
+       font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 26px; text-transform: uppercase;
+       color: {INK}; background: {YELLOW}; border: 4px solid {INK}; border-radius: 999px; padding: 4px 0; }}
+.credit {{ font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 20px; color: #555; margin-top: 6px; text-align: center; }}
 .fire {{ background: linear-gradient(180deg, {YELLOW} 0%, #FF9A00 55%, #FF3D00 100%); -webkit-background-clip: text;
         background-clip: text; color: transparent; }}
 #g03-t1 {{ -webkit-text-stroke: 0; }}
 #g03-t1 .fire {{ filter: drop-shadow(5px 0 0 #0B0B0B) drop-shadow(-5px 0 0 #0B0B0B)
         drop-shadow(0 5px 0 #0B0B0B) drop-shadow(0 -5px 0 #0B0B0B); }}"""
-    s = (slide("c1", 15.40) + slide("c2", 16.40, 140)
+    s = (popin("fig", 15.20, 0.6)
+         + slide("c1", 15.40) + popin("h1", 15.40, 0.9, 0.3)
+         + out(["h1"], 16.30) + slide("c2", 16.40, 140) + popin("h2", 16.40, 0.9, 0.3)
          + out(["c1", "c2"], 17.10)
          + slam("t1", 17.52) + blurin("t2", 18.04)
-         + out(["t1", "t2"], 18.86))
+         + out(["t1", "t2", "fig", "h2"], 18.86))
     files["g03"] = (st, du, scene_file("g03", st, du, m, s, css))
 
     # ---------------- g04 #2 posture + core/bahu/back (19.05 - 27.10)
@@ -376,9 +396,19 @@ def scenes():
         </div>
       </div>
     </div>
-    <div class="row" style="top: 790px;">
-      <div id="g08-card" class="card" style="width: 660px;">
-        <div class="lbl" style="font-size: 38px; margin-bottom: 24px;">Level testosteron</div>
+    <div class="row" style="top: 640px;">
+      <div id="g08-card" class="card" style="width: 660px; padding: 26px 34px;">
+        <div style="display:flex; align-items:center; gap: 22px; margin-bottom: 22px;">
+          <div style="background:#fff; border-radius: 16px; padding: 6px; flex: none;">
+            <img src="assets/images/testosterone-structure.png" alt="Testosterone structure" style="display:block; width: 210px; height: 137px;">
+          </div>
+          <div>
+            <div class="hd sub" style="opacity:1; font-size: 58px; -webkit-text-stroke-width: 8px;">TESTOSTERON</div>
+            <div class="lbl" style="font-size: 28px; color:#cfcfcf;">Hormon C19H28O2</div>
+            <div class="lbl" data-layout-ignore style="font-size: 18px; font-weight: 600; color:#9a9a9a; margin-top: 6px;">Struktur: PubChem (NIH)</div>
+          </div>
+        </div>
+        <div class="lbl" style="font-size: 36px; margin-bottom: 18px;">Level testosteron</div>
         <div style="display:flex; align-items:center; gap: 18px; margin-bottom: 20px;">
           <div class="lbl" style="width: 170px; color:#bbb;">Lelaki</div>
           <div style="flex:1; height: 44px; border-radius: 22px; background: rgba(255,255,255,.14); overflow: hidden;">
@@ -393,7 +423,7 @@ def scenes():
         </div>
       </div>
     </div>
-    <div class="row" style="top: 1062px;"><div id="g08-low" class="pill green">Lebih rendah</div></div>"""
+    <div class="row" style="top: 1092px;"><div id="g08-low" class="pill green">Lebih rendah</div></div>"""
     s = (popin("tag", 41.64) + blurin("t1", 42.40) + slam("t2", 42.92)
          + stamp("x", 43.18, 0)
          + out(["tag", "t1", "t2", "x"], 44.02)
