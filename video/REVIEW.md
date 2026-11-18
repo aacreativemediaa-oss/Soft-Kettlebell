@@ -38,13 +38,13 @@ See `assets/images/CREDITS.md`. Google Images results were not used (mostly copy
 | c07 | 36.55–41.45 | IMG_1992.mov (0.0) | Peha, perut, lengan |
 | c08 | 41.45–49.10 | video_20251202_073327_edit.mp4 (0.0) | Takkan sado, testosteron |
 | c09 | 49.10–54.95 | IMG_1028.mov (0.0) | Konsisten, hasil |
-| c10 | 54.95–59.25 | video_20260523_100816.MP4 (18.0) | CTA link kuning |
+| c10 | 54.95–59.25 | video_20260523_100816.MP4 (18.0) | CTA link beg kuning |
 
 No speed changes anywhere. Footage was screened with an audio classifier (AudioSet AST): only `IMG_2537*.mov` carry music, so they were not used; every chosen segment is ambient only (no music, little speech), played at 30 %.
 
 ## Caption / graphic overlap rule
 
-A caption is hidden for every clause a graphic already writes out (`HIDE` in `tools/build.py`): hook title, "No. 3 paling ramai suka", "Save & repost", #1/#2/#3 headers, kardio card, masa/selepas workout chips, afterburn, core/bahu/back, lenguh, tegap & melentik, peha/perut/lengan, tegang & kemas, takkan sado, testosteron meter, checklist, link kuning, harga murah.
+A caption is hidden for every clause a graphic already writes out (`HIDE` in `tools/build.py`): hook title, "No. 3 paling ramai suka", "Save & repost", #1/#2/#3 headers, kardio card, masa/selepas workout chips, afterburn, core/bahu/back, lenguh, tegap & melentik, peha/perut/lengan, tegang & kemas, takkan sado, testosteron meter, checklist, link beg kuning, harga murah.
 
 ## Checks done
 
@@ -56,7 +56,7 @@ A caption is hidden for every clause a graphic already writes out (`HIDE` in `to
 
 ## Assumptions to confirm
 
-- "Save dari post" was heard as **"Save dan repost"**; "Limit kuning" as **"Link kuning"**; "sadur" as **"sado"**; "abang Jim" as **"abang gym"**.
+- "Save dari post" was heard as **"Save dan repost"**; "Limit kuning" as **"Link beg kuning"** (confirmed by client); "sadur" as **"sado"**; "abang Jim" as **"abang gym"**.
 - "Saiz 70 % daripada versi pertama": base scale hero 200 / header 160 / sub 120 / label 52 → used 140 / 112 / 84 / 36 px. Caption fixed at 60 px as specified.
 - The VO is quiet (−30 LUFS). It was kept at 100 % as asked; if the platform level matters, normalise the final mix rather than the VO.
 

@@ -1456,12 +1456,12 @@
   "key": false
  },
  {
-  "text": "LINK",
+  "text": "LINK BEG",
   "start": 55.151,
   "end": 55.32,
   "punct": false,
   "id": "w182",
-  "key": true
+  "key": false
  },
  {
   "text": "KUNING",

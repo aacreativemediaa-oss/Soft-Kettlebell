@@ -1,7 +1,7 @@
 # Transkrip voiceover (asal, tidak dipotong)
 
 Sumber: `New Task` (Drive), 59.26 s. Transkripsi Whisper large-v3 (Bahasa Melayu), disemak manual.
-Pembetulan: *dari post → dan repost*, *lengoh → lenguh*, *sadur → sado*, *abang Jim → abang gym*, *Limit kuning → Link kuning*.
+Pembetulan: *dari post → dan repost*, *lengoh → lenguh*, *sadur → sado*, *abang Jim → abang gym*, *Limit kuning → Link beg kuning*.
 
 | Masa | Ayat | Babak / klip |
 |---|---|---|
@@ -24,4 +24,4 @@ Pembetulan: *dari post → dan repost*, *lengoh → lenguh*, *sadur → sado*, *
 | 41.42–43.98 | Jangan risau, korang takkan nampak sado macam abang gym pun. | c08 (video_20251202_073327_edit.mp4) |
 | 44.12–48.94 | Sebab wanita secara biologi dia, memang susah nak jadi sado sebab level testosteron lebih rendah tau. | c08 (video_20251202_073327_edit.mp4) |
 | 49.02–54.68 | Ramai wanita yang konsisten buat latihan kettlebell ni dan mula nampak hasil, badan lebih kemas, lebih yakin nak berjumpa dengan orang. | c09 (IMG_1028.mov) |
-| 54.98–59.06 | Link kuning aku letak kat bawah ni, korang kena grab cepat sebab harga tengah murah sangat sekarang ni. | c10 (video_20260523_100816.MP4) |
+| 54.98–59.06 | Link beg kuning aku letak kat bawah ni, korang kena grab cepat sebab harga tengah murah sangat sekarang ni. | c10 (video_20260523_100816.MP4) |

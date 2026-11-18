@@ -34,7 +34,7 @@ YELLOW, GREEN, PINK, RED, INK = "#FFE600", "#39FF14", "#FF3D8B", "#FF2D2D", "#0B
 
 # ---------------------------------------------------------------- words
 FIX = {"dari": "dan", "post": "repost", "lengoh": "lenguh", "sadur": "sado",
-       "jim": "gym", "limit": "link"}
+       "jim": "gym", "limit": "link beg"}
 KEYWORDS = {"KALORI", "BURN", "BEBAN", "WORKOUT", "AFTERBURN", "POSTURE", "KETTLEBELL", "CORE",
             "BAHU", "BACK", "TEGAP", "MELENTIK", "CANTIK", "GELEBEH", "PEHA", "PERUT", "LENGAN",
             "TEGANG", "KEMAS", "SADO", "TESTOSTERON", "KONSISTEN", "HASIL", "YAKIN", "MURAH",
@@ -454,7 +454,8 @@ def scenes():
            border-radius: 40px; padding: 18px 34px; box-shadow: 0 14px 0 {INK};">
         {CART_SVG}
         <div style="display:flex; flex-direction:column;">
-          <div class="hd head" style="opacity:1; color:{INK}; -webkit-text-stroke:0; text-shadow:none;">LINK KUNING</div>
+          <div class="lbl" style="color:{INK}; font-size: 38px;">Link</div>
+          <div class="hd head" style="opacity:1; color:{INK}; -webkit-text-stroke:0; text-shadow:none;">BEG KUNING</div>
           <div class="lbl" style="color:{INK}; font-size: 38px;">Kat bawah ni!</div>
         </div>
       </div>
