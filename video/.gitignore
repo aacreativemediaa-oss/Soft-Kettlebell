@@ -1,0 +1,5 @@
+node_modules/
+.hyperframes/
+renders/
+# Processed footage is regenerated from the Drive folder with tools/prep_footage.sh
+assets/footage/

@@ -1,0 +1,77 @@
+<template>
+  <style>
+@font-face { font-family: 'Anton'; src: url('assets/fonts/Anton-Regular.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Montserrat'; src: url('assets/fonts/Montserrat-Variable.woff2') format('woff2'); font-weight: 100 900; }
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+/* Social safe area (TikTok + Reels + Shorts): y 288-1248; x 120-888 above y 840, x 120-780 below.
+   Lower-band blocks are left-aligned from x 120 and at most 660 px wide; .up blocks centre in 120-888. */
+.row { position: absolute; left: 120px; width: 660px; display: flex; justify-content: flex-start; align-items: center; gap: 22px; }
+.col { position: absolute; left: 120px; width: 660px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.row.up, .col.up { left: 120px; width: 768px; justify-content: center; align-items: center; }
+.hd { font-family: 'Anton', sans-serif; text-transform: uppercase; line-height: 1.02; color: #fff;
+      -webkit-text-stroke: 12px #0B0B0B; paint-order: stroke fill; letter-spacing: 1px; white-space: nowrap;
+      text-shadow: 0 10px 0 rgba(0,0,0,.35); opacity: 0; }
+.hero { font-size: 140px; }
+.head { font-size: 112px; }
+.sub { font-size: 84px; -webkit-text-stroke-width: 10px; }
+.y { color: #FFE600; } .g { color: #39FF14; } .p { color: #FF3D8B; }
+.pill { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 36px; letter-spacing: 1px;
+        text-transform: uppercase; color: #0B0B0B; background: #FFE600; border: 5px solid #0B0B0B;
+        border-radius: 999px; padding: 12px 30px; box-shadow: 0 8px 0 #0B0B0B; white-space: nowrap;
+        display: flex; align-items: center; gap: 14px; opacity: 0; }
+.pill.dark { background: rgba(11,11,11,.88); color: #fff; border-color: #fff; box-shadow: 0 8px 0 rgba(0,0,0,.5); }
+.pill.green { background: #39FF14; }
+.pill.pink { background: #FF3D8B; color: #fff; }
+.pill.white { background: #fff; }
+.badge { width: 150px; height: 150px; border-radius: 50%; background: #FF3D8B; border: 8px solid #0B0B0B;
+         box-shadow: 0 10px 0 #0B0B0B; display: flex; align-items: center; justify-content: center;
+         font-family: 'Anton', sans-serif; font-size: 84px; color: #fff; opacity: 0; flex: none; }
+.card { background: rgba(11,11,11,.86); border: 5px solid #fff; border-radius: 34px; padding: 30px 38px;
+        box-shadow: 0 14px 0 rgba(0,0,0,.45); opacity: 0; }
+.lbl { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 36px; color: #fff;
+       text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+svg { display: block; }
+
+  </style>
+  <div id="root" data-composition-id="g05" data-width="1080" data-height="1920" data-layout-allow-overlap>
+    <div class="col" style="top: 840px; gap: 6px;">
+      <div id="g05-l1" class="pill dark">Mula-mula</div>
+      <div id="g05-a" class="hd head">LENGUH</div>
+    </div>
+    <div class="col" style="top: 780px; gap: 0;">
+      <div id="g05-l2" class="pill dark" style="margin-bottom: 8px;">Lama-lama</div>
+      <div id="g05-b1" class="hd head g">TEGAP</div>
+      <div id="g05-b2" class="hd head g">&amp; MELENTIK</div>
+    </div>
+    <div id="g05-s1" style="position:absolute; left: 480px; top: 830px; opacity:0"><svg width="84" height="84" viewBox="0 0 100 100"><path d="M50 0 C54 36 64 46 100 50 C64 54 54 64 50 100 C46 64 36 54 0 50 C36 46 46 36 50 0 Z" fill="#FFE600" stroke="#0B0B0B" stroke-width="4"/></svg></div>
+    <div id="g05-s2" style="position:absolute; left: 700px; top: 1010px; opacity:0"><svg width="64" height="64" viewBox="0 0 100 100"><path d="M50 0 C54 36 64 46 100 50 C64 54 54 64 50 100 C46 64 36 54 0 50 C36 46 46 36 50 0 Z" fill="#FFE600" stroke="#0B0B0B" stroke-width="4"/></svg></div>
+    <div id="g05-s3" style="position:absolute; left: 70px; top: 930px; opacity:0"><svg width="52" height="52" viewBox="0 0 100 100"><path d="M50 0 C54 36 64 46 100 50 C64 54 54 64 50 100 C46 64 36 54 0 50 C36 46 46 36 50 0 Z" fill="#FFE600" stroke="#0B0B0B" stroke-width="4"/></svg></div>
+  </div>
+  <script>
+    (function () {
+      // Times below are written in film seconds; T(x) converts to this scene's clock.
+      const T0 = 27.1;
+      const T = (x) => +(x - T0).toFixed(4);
+      const END = T(33.0500);
+      const tl = gsap.timeline({ paused: true });
+      const q = (s) => "#g05-" + s;
+      tl.fromTo(q("l1"), { opacity: 0, x: -140, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.38, ease: "expo.out" }, T(27.37));
+      tl.fromTo(q("a"), { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }, T(28.06));
+      tl.fromTo(q("a"), { rotation: 0 }, { rotation: 3, duration: 0.07, yoyo: true, repeat: 5, ease: "sine.inOut" }, T(28.40));
+      tl.to([q("l1"), q("a")], { opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }, T(29.62));
+      tl.set([q("l1"), q("a")], { opacity: 0 }, T(29.790));
+      tl.fromTo(q("l2"), { opacity: 0, x: 140, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.38, ease: "expo.out" }, T(29.95));
+      tl.fromTo(q("b1"), { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }, T(30.86));
+      tl.fromTo(q("b2"), { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }, T(31.44));
+      tl.fromTo(q("s1"), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.26, ease: "back.out(2.2)" }, T(32.42));
+      tl.fromTo(q("s2"), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.26, ease: "back.out(2.2)" }, T(32.48));
+      tl.fromTo(q("s3"), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.26, ease: "back.out(2.2)" }, T(32.54));
+      tl.fromTo([q("s1"), q("s2"), q("s3")], { rotation: 0 }, { rotation: 60, duration: 0.4, ease: "power2.out" }, T(32.42));
+      tl.to([q("l2"), q("b1"), q("b2"), q("s1"), q("s2"), q("s3")], { opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }, T(32.86));
+      tl.set([q("l2"), q("b1"), q("b2"), q("s1"), q("s2"), q("s3")], { opacity: 0 }, T(33.030));
+
+      window.__timelines["g05"] = tl;
+    })();
+  </script>
+</template>

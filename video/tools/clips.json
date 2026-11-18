@@ -1,0 +1,12 @@
+[
+ {"id":"c01","src":"IMG_1026.mov","ss":1.00,"start":0.00,"end":6.70,"music":false},
+ {"id":"c02","src":"video_20260621_114944.mp4","ss":0.00,"start":6.70,"end":12.45,"music":false},
+ {"id":"c03","src":"video_20260621_114605.mp4","ss":10.00,"start":12.45,"end":19.05,"music":false},
+ {"id":"c04","src":"video_20260316_010826.mp4","ss":1.50,"start":19.05,"end":27.10,"music":false},
+ {"id":"c05","src":"IMG_1994.mov","ss":0.30,"start":27.10,"end":33.05,"music":false},
+ {"id":"c06","src":"IMG_2536a.mov","ss":0.00,"start":33.05,"end":36.55,"music":false},
+ {"id":"c07","src":"IMG_1992.mov","ss":0.00,"start":36.55,"end":41.45,"music":false},
+ {"id":"c08","src":"video_20251202_073327_edit.mp4","ss":0.00,"start":41.45,"end":49.10,"music":false},
+ {"id":"c09","src":"IMG_1028.mov","ss":0.00,"start":49.10,"end":54.95,"music":false},
+ {"id":"c10","src":"video_20260523_100816.MP4","ss":18.00,"start":54.95,"end":59.25,"music":false}
+]
