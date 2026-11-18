@@ -1,0 +1,62 @@
+<template>
+  <style>
+@font-face { font-family: 'Anton'; src: url('assets/fonts/Anton-Regular.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Montserrat'; src: url('assets/fonts/Montserrat-Variable.woff2') format('woff2'); font-weight: 100 900; }
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+/* Social safe area (TikTok + Reels + Shorts): y 288-1248; x 120-888 above y 840, x 120-780 below.
+   Lower-band blocks are left-aligned from x 120 and at most 660 px wide; .up blocks centre in 120-888. */
+.row { position: absolute; left: 120px; width: 660px; display: flex; justify-content: flex-start; align-items: center; gap: 22px; }
+.col { position: absolute; left: 120px; width: 660px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.row.up, .col.up { left: 120px; width: 768px; justify-content: center; align-items: center; }
+.hd { font-family: 'Anton', sans-serif; text-transform: uppercase; line-height: 1.02; color: #fff;
+      -webkit-text-stroke: 12px #0B0B0B; paint-order: stroke fill; letter-spacing: 1px; white-space: nowrap;
+      text-shadow: 0 10px 0 rgba(0,0,0,.35); opacity: 0; }
+.hero { font-size: 140px; }
+.head { font-size: 112px; }
+.sub { font-size: 84px; -webkit-text-stroke-width: 10px; }
+.y { color: #FFE600; } .g { color: #39FF14; } .p { color: #FF3D8B; }
+.pill { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 36px; letter-spacing: 1px;
+        text-transform: uppercase; color: #0B0B0B; background: #FFE600; border: 5px solid #0B0B0B;
+        border-radius: 999px; padding: 12px 30px; box-shadow: 0 8px 0 #0B0B0B; white-space: nowrap;
+        display: flex; align-items: center; gap: 14px; opacity: 0; }
+.pill.dark { background: rgba(11,11,11,.88); color: #fff; border-color: #fff; box-shadow: 0 8px 0 rgba(0,0,0,.5); }
+.pill.green { background: #39FF14; }
+.pill.pink { background: #FF3D8B; color: #fff; }
+.pill.white { background: #fff; }
+.badge { width: 150px; height: 150px; border-radius: 50%; background: #FF3D8B; border: 8px solid #0B0B0B;
+         box-shadow: 0 10px 0 #0B0B0B; display: flex; align-items: center; justify-content: center;
+         font-family: 'Anton', sans-serif; font-size: 84px; color: #fff; opacity: 0; flex: none; }
+.card { background: rgba(11,11,11,.86); border: 5px solid #fff; border-radius: 34px; padding: 30px 38px;
+        box-shadow: 0 14px 0 rgba(0,0,0,.45); opacity: 0; }
+.lbl { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 36px; color: #fff;
+       text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+svg { display: block; }
+
+  </style>
+  <div id="root" data-composition-id="g09" data-width="1080" data-height="1920" data-layout-allow-overlap>
+    <div class="row" style="top: 840px;">
+      <div id="g09-card" class="card" style="display:flex; flex-direction:column; gap: 22px; padding: 30px 40px;">
+        <div id="g09-i1" style="display:flex; align-items:center; gap: 20px; opacity:0;"><svg width="54" height="54" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25" fill="#39FF14" stroke="#0B0B0B" stroke-width="4"/><path d="M15 28 l8 8 l16 -18" fill="none" stroke="#0B0B0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="lbl" style="font-size: 40px;">Badan lebih kemas</div></div>
+        <div id="g09-i2" style="display:flex; align-items:center; gap: 20px; opacity:0;"><svg width="54" height="54" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25" fill="#39FF14" stroke="#0B0B0B" stroke-width="4"/><path d="M15 28 l8 8 l16 -18" fill="none" stroke="#0B0B0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="lbl" style="font-size: 40px;">Lebih yakin</div><div class="lbl" style="font-size: 30px; font-weight: 600; color: #cfcfcf;">nak jumpa orang</div></div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      // Times below are written in film seconds; T(x) converts to this scene's clock.
+      const T0 = 59.55;
+      const T = (x) => +(x - T0).toFixed(4);
+      const END = T(66.0800);
+      const tl = gsap.timeline({ paused: true });
+      const q = (s) => "#g09-" + s;
+      tl.fromTo(q("card"), { opacity: 0, x: -140, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.38, ease: "expo.out" }, T(63.06));
+      tl.fromTo(q("i1"), { opacity: 0, x: -140, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.38, ease: "expo.out" }, T(63.16));
+      tl.fromTo(q("i2"), { opacity: 0, x: -140, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.38, ease: "expo.out" }, T(64.72));
+      tl.to([q("card"), q("i1"), q("i2")], { opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }, T(65.95));
+      tl.set([q("card"), q("i1"), q("i2")], { opacity: 0 }, T(66.120));
+
+      window.__timelines["g09"] = tl;
+    })();
+  </script>
+</template>

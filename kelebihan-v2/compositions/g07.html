@@ -1,0 +1,67 @@
+<template>
+  <style>
+@font-face { font-family: 'Anton'; src: url('assets/fonts/Anton-Regular.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Montserrat'; src: url('assets/fonts/Montserrat-Variable.woff2') format('woff2'); font-weight: 100 900; }
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+/* Social safe area (TikTok + Reels + Shorts): y 288-1248; x 120-888 above y 840, x 120-780 below.
+   Lower-band blocks are left-aligned from x 120 and at most 660 px wide; .up blocks centre in 120-888. */
+.row { position: absolute; left: 120px; width: 660px; display: flex; justify-content: flex-start; align-items: center; gap: 22px; }
+.col { position: absolute; left: 120px; width: 660px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.row.up, .col.up { left: 120px; width: 768px; justify-content: center; align-items: center; }
+.hd { font-family: 'Anton', sans-serif; text-transform: uppercase; line-height: 1.02; color: #fff;
+      -webkit-text-stroke: 12px #0B0B0B; paint-order: stroke fill; letter-spacing: 1px; white-space: nowrap;
+      text-shadow: 0 10px 0 rgba(0,0,0,.35); opacity: 0; }
+.hero { font-size: 140px; }
+.head { font-size: 112px; }
+.sub { font-size: 84px; -webkit-text-stroke-width: 10px; }
+.y { color: #FFE600; } .g { color: #39FF14; } .p { color: #FF3D8B; }
+.pill { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 36px; letter-spacing: 1px;
+        text-transform: uppercase; color: #0B0B0B; background: #FFE600; border: 5px solid #0B0B0B;
+        border-radius: 999px; padding: 12px 30px; box-shadow: 0 8px 0 #0B0B0B; white-space: nowrap;
+        display: flex; align-items: center; gap: 14px; opacity: 0; }
+.pill.dark { background: rgba(11,11,11,.88); color: #fff; border-color: #fff; box-shadow: 0 8px 0 rgba(0,0,0,.5); }
+.pill.green { background: #39FF14; }
+.pill.pink { background: #FF3D8B; color: #fff; }
+.pill.white { background: #fff; }
+.badge { width: 150px; height: 150px; border-radius: 50%; background: #FF3D8B; border: 8px solid #0B0B0B;
+         box-shadow: 0 10px 0 #0B0B0B; display: flex; align-items: center; justify-content: center;
+         font-family: 'Anton', sans-serif; font-size: 84px; color: #fff; opacity: 0; flex: none; }
+.card { background: rgba(11,11,11,.86); border: 5px solid #fff; border-radius: 34px; padding: 30px 38px;
+        box-shadow: 0 14px 0 rgba(0,0,0,.45); opacity: 0; }
+.lbl { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 36px; color: #fff;
+       text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+svg { display: block; }
+
+  </style>
+  <div id="root" data-composition-id="g07" data-width="1080" data-height="1920" data-layout-allow-overlap>
+    <div style="position:absolute; left: 120px; top: 800px;"><div id="g07-k1" class="pill green" style="font-size: 44px;">Peha</div></div>
+    <div style="position:absolute; left: 300px; top: 910px;"><div id="g07-k2" class="pill green" style="font-size: 44px;">Perut</div></div>
+    <div style="position:absolute; left: 120px; top: 1020px;"><div id="g07-k3" class="pill green" style="font-size: 44px;">Lengan</div></div>
+    <div class="col" style="top: 862px; left: 160px; gap: 0;">
+      <div id="g07-t1" class="hd head">TEGANG</div>
+      <div id="g07-t2" class="hd head g">&amp; KEMAS</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      // Times below are written in film seconds; T(x) converts to this scene's clock.
+      const T0 = 45.25;
+      const T = (x) => +(x - T0).toFixed(4);
+      const END = T(51.2800);
+      const tl = gsap.timeline({ paused: true });
+      const q = (s) => "#g07-" + s;
+      tl.fromTo(q("k1"), { opacity: 0, x: -140, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.38, ease: "expo.out" }, T(47.58));
+      tl.fromTo(q("k2"), { opacity: 0, x: -140, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.38, ease: "expo.out" }, T(48.04));
+      tl.fromTo(q("k3"), { opacity: 0, x: -140, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.38, ease: "expo.out" }, T(48.66));
+      tl.to([q("k1"), q("k2"), q("k3")], { opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }, T(49.95));
+      tl.set([q("k1"), q("k2"), q("k3")], { opacity: 0 }, T(50.120));
+      tl.fromTo(q("t1"), { opacity: 0, scale: 2.4, rotation: -15 }, { opacity: 1, scale: 1, rotation: -5, duration: 0.26, ease: "power4.out" }, T(50.16));
+      tl.fromTo(q("t2"), { opacity: 0, scale: 2.4, rotation: -15 }, { opacity: 1, scale: 1, rotation: -5, duration: 0.26, ease: "power4.out" }, T(50.64));
+      tl.to([q("t1"), q("t2")], { opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }, T(51.12));
+      tl.set([q("t1"), q("t2")], { opacity: 0 }, T(51.290));
+
+      window.__timelines["g07"] = tl;
+    })();
+  </script>
+</template>
