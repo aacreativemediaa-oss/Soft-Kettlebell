@@ -15,7 +15,7 @@ left, fact images (EPOC diagram for afterburn, PubChem testosterone structure), 
 | c05 | 33.15–39.15 | IMG_1994.mov (0.3) | Lenguh → tegap & melentik |
 | c06 | 39.15–45.25 | IMG_1992.mov (0.0) | #3 Gelebeh |
 | c07 | 45.25–51.28 | video_20251226_112938.mp4 (0.5) | Peha, perut, lengan |
-| c08 | 51.28–59.55 | video_20251202_073327_edit.mp4 (0.0) | Bukan sado, testosteron (molecule card) |
+| c08 | 51.28–59.55 | video_20260713_134440.mp4 (2.0) — kettlebell swing (client asked for a different shot than the red-shirt clip) | Bukan sado, testosteron (molecule card) |
 | c09 | 59.55–66.08 | IMG_1028.mov (0.0) | Konsisten, hasil |
 | c10 | 66.08–70.48 | video_20260523_100816.MP4 (18.0) | CTA link beg kuning |
 

@@ -23,9 +23,9 @@ Pembetulan: *pre-swab → brisk walk*, *akan gelembik → kurangkan gelebeh*, *l
 | 43.54–45.00 | Ini yang ramai wanita suka sangat. | c06 (IMG_1992.mov) |
 | 45.24–46.88 | So bila otot korang mula aktif bekerja, | c07 (video_20251226_112938.mp4) |
 | 46.96–51.10 | bahagian peha, perut dan lengan korang akan nampak lebih tegang dan kemas tau. | c07 (video_20251226_112938.mp4) |
-| 51.18–52.82 | Bukan nampak sado macam abang gym tu. | c08 (video_20251202_073327_edit.mp4) |
-| 52.98–57.34 | So korang jangan risau sebab wanita ni secara biologi dia memang susah nak jadi sado | c08 (video_20251202_073327_edit.mp4) |
-| 57.34–59.36 | sebab level testosteron yang lebih rendah tau. | c08 (video_20251202_073327_edit.mp4) |
+| 51.18–52.82 | Bukan nampak sado macam abang gym tu. | c08 (video_20260713_134440.mp4) |
+| 52.98–57.34 | So korang jangan risau sebab wanita ni secara biologi dia memang susah nak jadi sado | c08 (video_20260713_134440.mp4) |
+| 57.34–59.36 | sebab level testosteron yang lebih rendah tau. | c08 (video_20260713_134440.mp4) |
 | 59.44–63.02 | Ramai wanita yang dah konsisten buat latihan kettlebell ni dah mula nampak hasil. | c09 (IMG_1028.mov) |
 | 63.06–65.78 | Badan jadi lebih kemas dan lebih yakin nak berjumpa dengan orang. | c09 (IMG_1028.mov) |
 | 66.00–67.56 | Aku dah letak link beg kuning kat bawah. | c10 (video_20260523_100816.MP4) |
