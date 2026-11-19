@@ -398,7 +398,7 @@ def scenes():
          + out(["dg", "q", "a", "b", "reps"], 14.10))
     files["g03"] = (st, du, scene_file("g03", st, du, m, s, LBS_CSS))
 
-    # ---------------- g04 #2 kneeling halos (header low: kettlebell travels round the head)
+    # ---------------- g04 #2 kneeling halos (IMG_2772; header low: kettlebell travels round the head)
     st, du = win("c04")
     m = header("g04", 2, "KNEELING", "HALOS", 820)
     s = (popin("badge", 15.16) + slam("t1", 15.68) + slam("t2", 16.12, 1.4)
@@ -613,7 +613,7 @@ def index_file(files):
     vids, hosts, sfx_tags, zooms = [], [], [], []
     for i, c in enumerate(CLIPS):
         d = c["end"] - c["start"]
-        audio = 'muted' if c["music"] else 'data-has-audio="true" data-volume="0.3"'
+        audio = 'muted' if c["music"] else f'data-has-audio="true" data-volume="{c.get("vol", 0.3)}"'
         vids.append(f'''      <div id="z{c["id"][1:]}" class="vwrap" style="z-index: {i + 1};">
         <video id="{c["id"]}" class="clip" src="assets/footage/{c["id"]}.mp4" data-start="{c["start"]}" data-duration="{d:.4f}"
                data-media-start="0" data-track-index="0" playsinline {audio}></video>

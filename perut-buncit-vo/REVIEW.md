@@ -15,12 +15,19 @@ public-domain anatomy images, ~70 MB delivery file.
 | c02 | 4.57–9.49 | IMG_2774 (1.0) | #1 Russian Twist, duduk + pegang |
 | c03 | 9.49–14.26 | IMG_2774 (9.0) | Pusing kiri/kanan, 10x setiap arah |
 | c04 | 14.26–17.67 | IMG_2772 (0.5) | #2 Kneeling Halos |
-| c05 | 17.67–24.93 | IMG_2776 (9.0) | Halo keliling kepala, 10 reps setiap arah |
+| c05 | 17.67–24.93 | IMG_2772 (5.0) | Halo keliling kepala, 10 reps setiap arah |
 | c06 | 24.93–32.47 | IMG_2775 (5.5) | #3 Side to Side Leg Raise (legs over the kettlebell) |
 | c07 | 32.47–34.93 | IMG_2775 (13.5) | 10x setiap arah |
 | c08 | 34.93–38.17 | video_20251202_073611_edit (28.0) | Latih otot abs & core (two anatomy cards) |
 | c09 | 38.17–43.93 | video_20260627_133228 (3.0) | Lembut, tak sakit, tak pecah (drop test, shake on both hits) |
 | c10 | 43.93–47.68 | lv_0_20250701221815 (58.0) | CTA link beg kuning, harga murah |
+
+## Client corrections
+
+- `IMG_2776` is a **wood chopper**, not kneeling halos: c05 now uses `IMG_2772` (5.0 s), the same halo take as c04.
+- Footage sound levelled (`tools/level_footage.py`): every clip louder than the quiet exercise clips (≈ −46.5 LUFS raw)
+  is turned down to match, never boosted past 30 %. Plastic unboxing c10 (−19 LUFS raw) → volume 0.013; c08 → 0.014;
+  drop test c09 → 0.045.
 
 ## To confirm
 

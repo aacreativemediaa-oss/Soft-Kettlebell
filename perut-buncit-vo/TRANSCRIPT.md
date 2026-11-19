@@ -13,8 +13,8 @@ Pembetulan: *auto abs → otot abs*. Perlu disahkan: *"kettlebell ni jadi selemb
 | 12.52–14.28 | Korang ulang 10 kali untuk setiap arah. | c03 (IMG_2774.MOV) |
 | 14.30–16.50 | Dan senaman yang kedua, Kneeling Halos. | c04 (IMG_2772.MOV) |
 | 16.68–17.54 | Yang ni senang je. | c04 (IMG_2772.MOV) |
-| 17.66–22.30 | Korang melutut macam ni, pusingkan kettlebell dekat belakang kepala sampai ke sisi badan. | c05 (IMG_2776.MOV) |
-| 22.40–24.96 | Korang buat dua-dua arah, 10 reps untuk setiap arah. | c05 (IMG_2776.MOV) |
+| 17.66–22.30 | Korang melutut macam ni, pusingkan kettlebell dekat belakang kepala sampai ke sisi badan. | c05 (IMG_2772.MOV) |
+| 22.40–24.96 | Korang buat dua-dua arah, 10 reps untuk setiap arah. | c05 (IMG_2772.MOV) |
 | 24.98–27.32 | Dan senaman yang ketiga, Side to Side Leg Raise. | c06 (IMG_2775.MOV) |
 | 27.32–32.40 | Letak kettlebell dekat level betis, lepas tu korang angkat kaki melepasi kettlebell ke kiri dan kanan macam ni. | c06 (IMG_2775.MOV) |
 | 32.46–34.94 | Dan korang ulang juga sebanyak 10 kali setiap arah. | c07 (IMG_2775.MOV) |
