@@ -413,7 +413,7 @@ def scenes():
     # ---------------- g10 CTA
     st, du = win("c10")
     m = f"""    <div class="col up" style="top: 350px; gap: 0;">
-      <div id="g10-t1" class="hd head">NAK KECILKAN</div>
+      <div id="g10-t1" class="hd head">NAK TRIM</div>
       <div id="g10-t2" class="hd head p">PERUT BUNCIT?</div>
     </div>
     <div class="row" style="top: 780px;">

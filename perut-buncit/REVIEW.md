@@ -12,7 +12,7 @@ synthesised SFX, CTA arrows on the far left, delivery file under 45 MB.
   1. "Belakang lurus, putar bahu — bukan tangan je" (+ top-view rotation diagram)
   2. "Badan jangan goyang, perut ketat, kettlebell rapat kepala" (+ halo path diagram)
   3. "Baru mula? Lutut bengkok — kaki lurus bila dah kuat" (+ bent → straight legs diagram)
-- CTA headline changed to "Nak kecilkan perut buncit?" to match the topic (button unchanged: "Grab kettlebell kat beg kuning sekarang!").
+- CTA headline "Nak trim perut buncit?" (client wording) to match the topic (button unchanged: "Grab kettlebell kat beg kuning sekarang!").
 
 ## Client corrections
 

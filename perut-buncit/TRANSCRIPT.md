@@ -13,4 +13,4 @@ Video tanpa voiceover; footage tiada percakapan (bunyi latar sahaja). "Transkrip
 | 29.4–34.6 | Tip #3 | IMG_2775 (8.0 s; kaki melepasi atas kettlebell) | CORE TIP · Baru mula? **LUTUT BENGKOK** · kaki lurus bila dah kuat · rajah lutut bengkok → kaki lurus | — |
 | 34.6–38.8 | USP | video_20260523_100816 (picit) | SOFT KETTLEBELL · MATERIAL **LEMBUT** | PICIT PUN BOLEH! |
 | 38.8–43.6 | USP | video_20260627_133228 (jatuh atas kaki) | ✓ **TAK PECAH** kalau terjatuh · ✓ **TAK SAKIT KAKI** bila terkena | — |
-| 43.6–49.0 | CTA | lv_0_20250701221815 (4KG) | NAK KECILKAN **PERUT BUNCIT?** · Grab kettlebell kat **BEG KUNING** sekarang! · anak panah kiri bawah | — |
+| 43.6–49.0 | CTA | lv_0_20250701221815 (4KG) | NAK TRIM **PERUT BUNCIT?** · Grab kettlebell kat **BEG KUNING** sekarang! · anak panah kiri bawah | — |
