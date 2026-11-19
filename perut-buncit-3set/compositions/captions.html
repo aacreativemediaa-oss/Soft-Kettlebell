@@ -1,0 +1,53 @@
+<template>
+  <style>
+@font-face { font-family: 'Anton'; src: url('assets/fonts/Anton-Regular.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Montserrat'; src: url('assets/fonts/Montserrat-Variable.woff2') format('woff2'); font-weight: 100 900; }
+
+#root { position: absolute; inset: 0; pointer-events: none; }
+.cg { position: absolute; left: 0; right: 0; top: 1150px; display: flex; justify-content: center; opacity: 0; overflow: visible; }
+.cl { font-family: 'Anton', sans-serif; font-size: 60px; line-height: 1.1; text-transform: uppercase;
+      text-align: center; color: #fff; -webkit-text-stroke: 9px #0B0B0B; paint-order: stroke fill;
+      letter-spacing: 1px; white-space: nowrap; text-shadow: 0 6px 0 rgba(0,0,0,.45); }
+.w { display: inline-block; margin: 0 7px; }
+.w.k { color: #39FF14; }
+
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920" data-layout-allow-safe-zone>
+    <div id="cg0" class="cg" data-s="6.1" data-e="6.74"><div class="cl"><span id="cw0" class="w" data-s="6.1" data-e="6.42">DUDUK,</span> <span id="cw1" class="w" data-s="6.42" data-e="6.74">TANGAN</span></div></div>
+    <div id="cg1" class="cg" data-s="6.79" data-e="7.47"><div class="cl"><span id="cw2" class="w" data-s="6.79" data-e="7.11">KE</span> <span id="cw3" class="w" data-s="7.11" data-e="7.47">BELAKANG</span></div></div>
+    <div id="cg2" class="cg" data-s="7.5" data-e="8.14"><div class="cl"><span id="cw4" class="w k" data-s="7.5" data-e="7.82">TARIK</span> <span id="cw5" class="w k" data-s="7.82" data-e="8.14">LUTUT</span></div></div>
+    <div id="cg3" class="cg" data-s="8.19" data-e="8.83"><div class="cl"><span id="cw6" class="w" data-s="8.19" data-e="8.51">KIRI,</span> <span id="cw7" class="w" data-s="8.51" data-e="8.83">KANAN</span></div></div>
+    <div id="cg4" class="cg" data-s="16.1" data-e="17.08"><div class="cl"><span id="cw8" class="w" data-s="16.1" data-e="16.42">DUDUK,</span> <span id="cw9" class="w k" data-s="16.42" data-e="16.74">DADA</span> <span id="cw10" class="w" data-s="16.74" data-e="17.08">TERBUKA</span></div></div>
+    <div id="cg5" class="cg" data-s="17.5" data-e="18.46"><div class="cl"><span id="cw11" class="w k" data-s="17.5" data-e="17.82">PUTAR</span> <span id="cw12" class="w" data-s="17.82" data-e="18.14">KIRI,</span> <span id="cw13" class="w" data-s="18.14" data-e="18.46">KANAN</span></div></div>
+    <div id="cg6" class="cg" data-s="26.1" data-e="27.1"><div class="cl"><span id="cw14" class="w" data-s="26.1" data-e="26.42">PUSING</span> <span id="cw15" class="w" data-s="26.42" data-e="26.78">KELILING</span> <span id="cw16" class="w k" data-s="26.78" data-e="27.1">KEPALA</span></div></div>
+    <div id="cg7" class="cg" data-s="27.5" data-e="28.46"><div class="cl"><span id="cw17" class="w" data-s="27.5" data-e="27.82">BADAN</span> <span id="cw18" class="w" data-s="27.82" data-e="28.14">JANGAN</span> <span id="cw19" class="w k" data-s="28.14" data-e="28.46">GOYANG</span></div></div>
+    <div id="cg8" class="cg" data-s="36.7" data-e="37.66"><div class="cl"><span id="cw20" class="w k" data-s="36.7" data-e="37.02">PICIT</span> <span id="cw21" class="w" data-s="37.02" data-e="37.34">PUN</span> <span id="cw22" class="w" data-s="37.34" data-e="37.66">BOLEH!</span></div></div>
+  </div>
+  <script>
+    (function () {
+      // Each group: in at its first word, hard kill after its last word (or when the next group starts).
+      // Active word turns yellow; keywords stay neon green and pop while spoken.
+      const tl = gsap.timeline({ paused: true });
+      const groups = Array.from(document.querySelectorAll("[data-composition-id=captions] .cg"));
+      groups.forEach((g, i) => {
+        const s = parseFloat(g.dataset.s), e = parseFloat(g.dataset.e);
+        const next = groups[i + 1] ? parseFloat(groups[i + 1].dataset.s) : Infinity;
+        const tIn = Math.max(0.05, s - 0.06);
+        const tOut = Math.min(e + 0.45, next - 0.04);
+        tl.fromTo(g, { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.1, ease: "back.out(2)" }, tIn);
+        tl.set(g, { opacity: 0, visibility: "hidden" }, tOut);
+        g.querySelectorAll(".w").forEach((w) => {
+          const ws = parseFloat(w.dataset.s), we = Math.min(parseFloat(w.dataset.e), tOut - 0.02);
+          if (w.classList.contains("k")) {
+            tl.fromTo(w, { scale: 1 }, { scale: 1.08, duration: 0.08, ease: "power2.out" }, ws);
+            tl.to(w, { scale: 1, duration: 0.12, ease: "power2.in" }, Math.max(ws + 0.09, we - 0.06));
+          } else {
+            tl.set(w, { color: "#FFE600" }, ws);
+            tl.set(w, { color: "#ffffff" }, Math.max(ws + 0.05, we));
+          }
+        });
+      });
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>
