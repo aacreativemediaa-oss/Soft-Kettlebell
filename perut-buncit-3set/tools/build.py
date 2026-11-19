@@ -398,21 +398,32 @@ def scenes():
          + out(["tag", "t1", "t2"], 38.62))
     files["g08"] = (st, du, scene_file("g08", st, du, m, s, LBS_CSS))
 
-    # ---------------- g09 USP: many weight options (sizes shown as icons, no invented numbers)
+    # ---------------- g09 USP: many weight options - real 2 / 2.5 / 4 / 6 / 8 kg kettlebells from the footage
     st, du = win("c09")
-    m = f"""    <div class="row up" style="top: 300px; align-items: flex-end; gap: 30px;">
-      <div id="g09-k1" style="opacity:0">{kb_svg(110, PINK, '#ff8db8')}</div>
-      <div id="g09-k2" style="opacity:0">{kb_svg(150, '#9B5CFF', '#c39bff')}</div>
-      <div id="g09-k3" style="opacity:0">{kb_svg(195, '#5FE0C0', '#a6f0de')}</div>
+    def card(n, img, label):
+        return (f'<div id="g09-k{n}" class="kbc" style="opacity:0"><img src="assets/images/{img}" alt="{label}">'
+                f'<div class="kbl">{label}</div></div>')
+    m = f"""    <div class="row up" style="top: 300px; gap: 24px;">
+      {card(1, "kb-2kg.jpg", "2KG")}{card(2, "kb-2-5kg.jpg", "2.5KG")}{card(3, "kb-4kg.jpg", "4KG")}
+    </div>
+    <div class="row up" style="top: 592px; gap: 24px;">
+      {card(4, "kb-6kg.jpg", "6KG")}{card(5, "kb-8kg.jpg", "8KG")}
     </div>
     <div class="col" style="top: 975px; gap: 0;">
       <div id="g09-t1" class="hd head" style="font-size: 100px;">ADA BANYAK</div>
       <div id="g09-t2" class="hd head y" style="font-size: 100px;">PILIHAN BERAT</div>
     </div>"""
-    s = (popin("k1", 39.00, 0.2) + popin("k2", 39.25, 0.2) + popin("k3", 39.50, 0.2)
-         + slam("t1", 39.90) + slam("t2", 40.30, 1.4)
-         + out(["k1", "k2", "k3", "t1", "t2"], 43.42))
-    files["g09"] = (st, du, scene_file("g09", st, du, m, s, LBS_CSS))
+    css = f"""
+.kbc {{ position: relative; width: 200px; height: 268px; border: 6px solid {INK}; border-radius: 22px; overflow: hidden;
+       background: #fff; box-shadow: 0 10px 0 rgba(0,0,0,.45); }}
+.kbc img {{ display: block; width: 100%; height: 100%; object-fit: cover; }}
+.kbl {{ position: absolute; left: 0; right: 0; bottom: 10px; margin: 0 auto; width: max-content; padding: 4px 16px;
+       font-family: 'Anton', sans-serif; font-size: 40px; color: {INK}; background: {YELLOW}; border: 4px solid {INK};
+       border-radius: 14px; }}"""
+    s = (popin("k1", 39.00, 0.3) + popin("k2", 39.30, 0.3) + popin("k3", 39.60, 0.3) + popin("k4", 39.90, 0.3) + popin("k5", 40.20, 0.3)
+         + slam("t1", 40.60) + slam("t2", 41.00, 1.4)
+         + out(["k1", "k2", "k3", "k4", "k5", "t1", "t2"], 43.42))
+    files["g09"] = (st, du, scene_file("g09", st, du, m, s, LBS_CSS + css))
 
     # ---------------- g10 CTA
     st, du = win("c10")
@@ -537,7 +548,7 @@ SFX = [
     ("whoosh-b", 24.40), ("pop-a", 24.62), ("pop-b", 24.95),
     ("whoosh-c", 29.40), ("pop-b", 29.60), ("pop-a", 29.80), ("pop-b", 30.35), ("ding", 31.20),
     ("whoosh-a", 34.60), ("pop-a", 35.00), ("pop-b", 35.35),
-    ("whoosh-b", 38.80), ("pop-a", 39.00), ("pop-b", 39.25), ("pop-a", 39.50), ("zap", 40.30),
+    ("whoosh-b", 38.80), ("pop-a", 39.00), ("pop-b", 39.30), ("pop-a", 39.60), ("pop-b", 39.90), ("pop-a", 40.20), ("zap", 41.00),
     ("whoosh-c", 43.60), ("pop-a", 43.85), ("pop-b", 45.00), ("cha-ching", 46.30),
 ]
 SHAKES = []  # no drop test in this edit

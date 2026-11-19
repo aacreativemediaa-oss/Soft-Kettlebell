@@ -12,5 +12,5 @@ Video tanpa voiceover; footage tiada percakapan (bunyi latar sahaja). "Transkrip
 | 24.4–29.4 | #3 Kneeling Halos | IMG_2772 (0.5 s) | #3 KNEELING HALOS | PUSING KELILING KEPALA / BADAN JANGAN GOYANG |
 | 29.4–34.6 | Set #3 | IMG_2772 (6.0 s) | **10 REPS × 3 SET** · pemasa 1:00 | — |
 | 34.6–38.8 | USP | video_20260523_100816 (picit 8KG) | SOFT KETTLEBELL · MATERIAL **LEMBUT** | PICIT PUN BOLEH! |
-| 38.8–43.6 | USP | IMG_2536a (dua kettlebell berlainan saiz) | ikon 3 kettlebell (kecil → besar) · ADA BANYAK **PILIHAN BERAT** | — |
+| 38.8–43.6 | USP | lv_0_20250913235535 (6KG) | kad gambar sebenar **2KG · 2.5KG · 4KG · 6KG · 8KG** · ADA BANYAK **PILIHAN BERAT** | — |
 | 43.6–49.0 | CTA | lv_0_20250701221815 (4KG) | NAK TRIM **BOROI?** · butang START BUAT **3 LATIHAN NI** SEKARANG! · Kettlebell kat beg kuning · anak panah kiri | — |
