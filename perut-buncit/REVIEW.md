@@ -8,7 +8,7 @@ synthesised SFX, CTA arrows on the far left, delivery file under 45 MB.
 
 - Hook "3 senaman untuk perut buncit", mini hook "Save & repost video". Intro shot `IMG_2777` (new footage; not used as an intro before).
 - Education: 1. Russian Twist, 2. Kneeling Halos, 3. Side to Side Leg Raise — demos on the new purple-shirt footage
-  (IMG_2774, IMG_2772, IMG_2779). One core tip each (written by me — please confirm):
+  (IMG_2774, IMG_2772, IMG_2775). One core tip each (written by me — please confirm):
   1. "Belakang lurus, putar bahu — bukan tangan je" (+ top-view rotation diagram)
   2. "Badan jangan goyang, perut ketat, kettlebell rapat kepala" (+ halo path diagram)
   3. "Baru mula? Lutut bengkok — kaki lurus bila dah kuat" (+ bent → straight legs diagram)
@@ -17,8 +17,9 @@ synthesised SFX, CTA arrows on the far left, delivery file under 45 MB.
 ## Client corrections
 
 - Hook tag "Kettlebell di rumah" removed.
-- Tip #3 footage: `IMG_2775` is a **Lateral Knee Tuck**, not the side to side leg raise; replaced with a later segment of
-  `IMG_2779` (9.5 s), where the legs pass over the kettlebell. `IMG_2775` is no longer used.
+- #3 footage: **IMG_2775 is the Side to Side Leg Raise** (legs pass over the kettlebell); **IMG_2779 is a Lateral Knee
+  Tuck** and is not used. Demo = IMG_2775 from 13.5 s, tip = IMG_2775 from 8.0 s (the shot the client pointed to).
+- Delivery: also a ~70 MB version (11 Mbps) on request, `renders/Perut-Buncit-FINAL-70MB.mp4`.
 
 ## Fact images
 

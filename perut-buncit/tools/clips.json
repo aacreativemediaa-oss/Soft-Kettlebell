@@ -4,8 +4,8 @@
  {"id":"c03","src":"video_20251202_073611_edit.mp4","ss":28.00,"start":9.40,"end":14.40,"music":false},
  {"id":"c04","src":"IMG_2772.MOV","ss":0.50,"start":14.40,"end":19.40,"music":false},
  {"id":"c05","src":"IMG_2776.MOV","ss":9.00,"start":19.40,"end":24.40,"music":false},
- {"id":"c06","src":"IMG_2779.MOV","ss":3.00,"start":24.40,"end":29.40,"music":false},
- {"id":"c07","src":"IMG_2779.MOV","ss":9.50,"start":29.40,"end":34.60,"music":false},
+ {"id":"c06","src":"IMG_2775.MOV","ss":13.50,"start":24.40,"end":29.40,"music":false},
+ {"id":"c07","src":"IMG_2775.MOV","ss":8.00,"start":29.40,"end":34.60,"music":false},
  {"id":"c08","src":"video_20260523_100816.MP4","ss":5.00,"start":34.60,"end":38.80,"music":false},
  {"id":"c09","src":"video_20260627_133228.mp4","ss":2.80,"start":38.80,"end":43.60,"music":false},
  {"id":"c10","src":"lv_0_20250701221815.MP4","ss":58.00,"start":43.60,"end":49.00,"music":false}
