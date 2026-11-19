@@ -21,6 +21,12 @@ synthesised SFX, CTA arrows on the far left, delivery file under 45 MB.
 | `gray392-oblique.png` | Russian twist — "Sasar: perut sisi" | Gray's Anatomy (1918) plate 392, Wikimedia Commons — public domain |
 | `gray397-rectus.png` | Leg raise — "Sasar: perut depan" | Gray's Anatomy (1918) plate 397, Wikimedia Commons — public domain |
 
+## Colour
+
+The new iPhone clips (IMG_27xx) are HDR (HLG, BT.2020). They are tone-mapped to SDR BT.709 in `tools/prep_footage.sh`
+(zscale + hable) and the film renders with `--sdr`; without this HyperFrames promoted the whole render to HDR and the
+graphics and footage looked washed out after conversion.
+
 ## Checks
 
 - `hyperframes check`: 0 errors; one contrast warning kept (pink display word with thick black stroke).
