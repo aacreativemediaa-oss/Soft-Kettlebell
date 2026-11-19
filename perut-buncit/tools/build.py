@@ -303,21 +303,19 @@ def scenes():
     def win(cid):
         return c[cid]["start"], c[cid]["end"] - c[cid]["start"]
 
-    # ---------------- g01 hook: one shot (IMG_2777 kneeling rotation) + mini hook "save & repost"
+    # ---------------- g01 hook: one shot (IMG_2777 kneeling) + mini hook "save & repost"
     st, du = win("c01")
-    m = f"""    <div class="row up" style="top: 300px;"><div id="g01-tag" class="pill pink">Kettlebell di rumah</div></div>
-    <div class="col up" style="top: 372px; gap: 0;">
+    m = f"""    <div class="col up" style="top: 330px; gap: 0;">
       <div id="g01-t1" class="hd hero"><span class="y">3</span> SENAMAN</div>
       <div id="g01-t2" class="hd sub">UNTUK <span class="p">PERUT BUNCIT</span></div>
     </div>
     <div class="row up" style="top: 640px;"><div id="g01-save" class="pill white">{BOOKMARK_SVG.format(id='g01-mark')}Save &amp; repost video</div></div>"""
     s = (f'      tl.fromTo(q("t1"), {{ opacity: 1, scale: 1.35 }}, {{ opacity: 1, scale: 1, duration: 0.3, ease: "expo.out" }}, 0);\n'
-         f'      tl.fromTo(q("tag"), {{ opacity: 1, y: -40 }}, {{ opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }}, 0);\n'
          + slam("t2", 0.50, 1.4)
          + popin("save", 1.90)
          + '      tl.fromTo(q("mark"), { fill: "#ffffff" }, { fill: "' + YELLOW + '", duration: 0.12 }, T(2.50));\n'
          + '      tl.fromTo(q("save"), { scale: 1 }, { scale: 1.12, duration: 0.1, yoyo: true, repeat: 1, ease: "power2.out" }, T(2.50));\n'
-         + out(["tag", "t1", "t2", "save"], 4.22))
+         + out(["t1", "t2", "save"], 4.22))
     files["g01"] = (st, du, scene_file("g01", st, du, m, s, LBS_CSS))
 
     # ---------------- g02 #1 russian twist demo + oblique anatomy

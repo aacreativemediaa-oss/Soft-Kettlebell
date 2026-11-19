@@ -45,8 +45,7 @@ svg { display: block; }
 
   </style>
   <div id="root" data-composition-id="g01" data-width="1080" data-height="1920" data-layout-allow-overlap>
-    <div class="row up" style="top: 300px;"><div id="g01-tag" class="pill pink">Kettlebell di rumah</div></div>
-    <div class="col up" style="top: 372px; gap: 0;">
+    <div class="col up" style="top: 330px; gap: 0;">
       <div id="g01-t1" class="hd hero"><span class="y">3</span> SENAMAN</div>
       <div id="g01-t2" class="hd sub">UNTUK <span class="p">PERUT BUNCIT</span></div>
     </div>
@@ -61,13 +60,12 @@ svg { display: block; }
       const tl = gsap.timeline({ paused: true });
       const q = (s) => "#g01-" + s;
       tl.fromTo(q("t1"), { opacity: 1, scale: 1.35 }, { opacity: 1, scale: 1, duration: 0.3, ease: "expo.out" }, 0);
-      tl.fromTo(q("tag"), { opacity: 1, y: -40 }, { opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }, 0);
       tl.fromTo(q("t2"), { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }, T(0.5));
       tl.fromTo(q("save"), { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.2)" }, T(1.9));
       tl.fromTo(q("mark"), { fill: "#ffffff" }, { fill: "#FFE600", duration: 0.12 }, T(2.50));
       tl.fromTo(q("save"), { scale: 1 }, { scale: 1.12, duration: 0.1, yoyo: true, repeat: 1, ease: "power2.out" }, T(2.50));
-      tl.to([q("tag"), q("t1"), q("t2"), q("save")], { opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }, T(4.22));
-      tl.set([q("tag"), q("t1"), q("t2"), q("save")], { opacity: 0 }, T(4.390));
+      tl.to([q("t1"), q("t2"), q("save")], { opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }, T(4.22));
+      tl.set([q("t1"), q("t2"), q("save")], { opacity: 0 }, T(4.390));
 
       window.__timelines["g01"] = tl;
     })();

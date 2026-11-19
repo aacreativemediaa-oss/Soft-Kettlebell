@@ -14,6 +14,12 @@ synthesised SFX, CTA arrows on the far left, delivery file under 45 MB.
   3. "Baru mula? Lutut bengkok — kaki lurus bila dah kuat" (+ bent → straight legs diagram)
 - CTA headline changed to "Nak kecilkan perut buncit?" to match the topic (button unchanged: "Grab kettlebell kat beg kuning sekarang!").
 
+## Client corrections
+
+- Hook tag "Kettlebell di rumah" removed.
+- Tip #3 footage: `IMG_2775` is a **Lateral Knee Tuck**, not the side to side leg raise; replaced with a later segment of
+  `IMG_2779` (9.5 s), where the legs pass over the kettlebell. `IMG_2775` is no longer used.
+
 ## Fact images
 
 | Image | Use | Source / licence |
