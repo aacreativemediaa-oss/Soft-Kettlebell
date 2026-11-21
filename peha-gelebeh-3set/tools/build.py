@@ -297,6 +297,8 @@ def tip_col(sid, rows):
 
 # Updated format: top headline 150 px, sub-headline 70 px (Anton).
 H_CSS = """
+.cbox { position: relative; display: inline-block; width: 470px; height: 1em; vertical-align: top; }
+.cnum { position: absolute; left: 0; top: 0; white-space: nowrap; transform-origin: 0% 60%; }
 .h150 { font-size: 150px; line-height: 0.98; }
 .s70 { font-size: 70px; line-height: 1.05; -webkit-text-stroke-width: 9px; }
 """
@@ -332,9 +334,17 @@ TIMER_SVG = f"""<svg width="200" height="200" viewBox="0 0 230 230">
 </svg>"""
 
 
+# Rep moments (film seconds) measured with tools/rep_times.py + frame check: squat/lunge bottom, swing at chest height.
+REPS = {1: [11.85, 13.90], 2: [20.40, 22.15, 23.90], 3: [30.70, 32.20, 33.75]}
+
+
 def sets_scene(sid, t0, t_end, n):
     # Client layout: reps block bottom-left, rest timer bottom-right (over the legs).
-    m = top_block(sid, f"LATIHAN #{n}", "10 REPS", "&#215; 3 SET", top=1160, extra=" data-layout-allow-safe-zone") + f"""
+    counts = [10 - i for i in range(len(REPS[n]) + 1)]
+    # Whole "N REPS" lines stacked in one box, so every count stays left-aligned with the block.
+    lines = "".join(f'<span id="{sid}-n{c}" class="cnum" style="opacity:{1 if i == 0 else 0}">{c} REPS</span>' for i, c in enumerate(counts))
+    l1 = f'<span class="cbox">{lines}</span>'
+    m = top_block(sid, f"LATIHAN #{n}", l1, "&#215; 3 SET", top=1160, extra=" data-layout-allow-safe-zone") + f"""
     <div style="position:absolute; left: 610px; top: 1210px;" data-layout-allow-safe-zone>
       <div id="{sid}-tm" class="card" style="background:{YELLOW}; border-color:{INK}; padding: 14px 18px 12px; display:flex; flex-direction:column; align-items:center;">
         {TIMER_SVG.replace('{p}', sid)}
@@ -346,6 +356,12 @@ def sets_scene(sid, t0, t_end, n):
          + popin("tm", t0 + 1.80, 0.5)
          + f'      tl.fromTo(q("ring"), {{ attr: {{ "stroke-dashoffset": 477.5 }} }}, {{ attr: {{ "stroke-dashoffset": 0 }}, duration: 2.2, ease: "none" }}, T({t0 + 2.10:.2f}));\n'
          + out(["s", "t1", "t2", "tm"], t_end - 0.18))
+    # Count down on every rep: swap the number, punch it and flash it yellow.
+    for i, t in enumerate(REPS[n]):
+        a, b = counts[i], counts[i + 1]
+        s += (f'      tl.set(q("n{a}"), {{ opacity: 0 }}, T({t:.2f}));\n'
+              f'      tl.set(q("n{b}"), {{ opacity: 1 }}, T({t:.2f}));\n'
+              f'      tl.fromTo(q("n{b}"), {{ scale: 1.45, color: "{YELLOW}" }}, {{ scale: 1, color: "#ffffff", duration: 0.35, ease: "back.out(2)", immediateRender: false }}, T({t:.2f}));\n')
     return m, s
 
 
@@ -537,6 +553,8 @@ SFX = [
     ("whoosh-a", 34.60), ("pop-a", 35.00), ("pop-b", 35.40),
     ("whoosh-b", 38.80), ("pop-a", 39.20), ("zap", 39.50), ("pop-a", 40.00), ("pop-b", 40.25), ("pop-a", 40.50), ("pop-b", 40.75), ("pop-a", 41.00),
     ("whoosh-c", 43.60), ("pop-a", 43.85), ("pop-b", 45.00), ("cha-ching", 46.30),
+    ("pop-a", 11.85), ("pop-b", 13.90), ("pop-a", 20.40), ("pop-b", 22.15), ("pop-a", 23.90),
+    ("pop-b", 30.70), ("pop-a", 32.20), ("pop-b", 33.75),
 ]
 SHAKES = []  # no drop test in this edit
 

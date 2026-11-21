@@ -11,3 +11,7 @@ footage sound at -57 LUFS per clip, synthesised SFX, CTA arrows far left, ~70 MB
 - USP: "Material lembut" (8KG squeeze) and "Ada banyak pilihan berat" with real 2 / 2.5 / 4 / 6 / 8 kg cards.
 - Kept warnings: the hook/CTA headline briefly crosses the Shorts top edge during its 1.6× slam-in (settles inside);
   pink headline contrast (thick black stroke).
+
+- Live rep counter (client request): counts down on each rep — lunge 11.85 / 13.90 s (the clip's first rep at 9.95 s
+  arrives with the block and is not counted), goblet 20.40 / 22.15 / 23.90 s, swing 30.70 / 32.20 / 33.75 s.
+  Lunge set clip now starts at 14.4 s of video_20251231_100508.
