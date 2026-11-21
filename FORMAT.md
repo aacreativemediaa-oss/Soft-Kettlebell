@@ -13,6 +13,8 @@ Applies to every new edit. Each project folder (`video/`, `kelebihan-v2/`, `gele
 - Anton for titles/captions, Montserrat for labels.
 - **Top headline 150 px, sub-headline 70 px** (Anton), from y ≈ 318 in the top band (x 120–888); long headlines split
   over two 150 px lines rather than shrinking. Labels/pills stay Montserrat 36 px. (Older projects used 140/112/84.)
+- "10 reps × 3 set" scenes: reps block (sub 70 + 2 × 150 px) bottom-left from y ≈ 1160 and the 1:00 rest timer
+  bottom-right, over the legs — not at the top (client layout).
 - Captions 60 px, uppercase, black stroke, active word yellow, keywords neon green, 2–3 words, centre-bottom.
 - No overlap: when a graphic shows a clause, that clause has no caption.
 - No "Kettlebell di rumah" tag on the hook. Fact images only from free sources (Gray's Anatomy, PubChem, Wikimedia with credit).

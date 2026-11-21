@@ -302,13 +302,13 @@ H_CSS = """
 """
 
 
-def top_block(sid, sub, l1, l2, c2="g", sub_first=True, center=False, sub_color="y"):
+def top_block(sid, sub, l1, l2, c2="g", sub_first=True, center=False, sub_color="y", top=318, extra=""):
     """Headline block in the top band (x 120-888, from y 300): sub-headline 70 px + two 150 px headline lines."""
     cls = "col up" if center else "col"
     sub_html = f'<div id="{sid}-s" class="hd s70 {sub_color}">{sub}</div>' if sub else ""
     lines = f'<div id="{sid}-t1" class="hd h150">{l1}</div>\n      <div id="{sid}-t2" class="hd h150 {c2}">{l2}</div>'
     inner = (sub_html + "\n      " + lines) if sub_first else (lines + "\n      " + sub_html)
-    return f"""    <div class="{cls}" style="top: 318px; width: 768px; gap: 0;">
+    return f"""    <div class="{cls}" style="top: {top}px; width: 768px; gap: 0;"{extra}>
       {inner}
     </div>"""
 
@@ -333,8 +333,9 @@ TIMER_SVG = f"""<svg width="200" height="200" viewBox="0 0 230 230">
 
 
 def sets_scene(sid, t0, t_end, n):
-    m = top_block(sid, f"LATIHAN #{n}", "10 REPS", "&#215; 3 SET") + f"""
-    <div style="position:absolute; left: 610px; top: 392px;">
+    # Client layout: reps block bottom-left, rest timer bottom-right (over the legs).
+    m = top_block(sid, f"LATIHAN #{n}", "10 REPS", "&#215; 3 SET", top=1160, extra=" data-layout-allow-safe-zone") + f"""
+    <div style="position:absolute; left: 610px; top: 1210px;" data-layout-allow-safe-zone>
       <div id="{sid}-tm" class="card" style="background:{YELLOW}; border-color:{INK}; padding: 14px 18px 12px; display:flex; flex-direction:column; align-items:center;">
         {TIMER_SVG.replace('{p}', sid)}
         <div class="lbl" style="color:{INK}; font-size: 36px; margin-top: 6px;">Rehat</div>
