@@ -1,0 +1,51 @@
+<template>
+  <style>
+@font-face { font-family: 'Anton'; src: url('assets/fonts/Anton-Regular.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Montserrat'; src: url('assets/fonts/Montserrat-Variable.woff2') format('woff2'); font-weight: 100 900; }
+
+#root { position: absolute; inset: 0; pointer-events: none; }
+.cg { position: absolute; left: 0; right: 0; top: 1150px; display: flex; justify-content: center; opacity: 0; overflow: visible; }
+.cl { font-family: 'Anton', sans-serif; font-size: 60px; line-height: 1.1; text-transform: uppercase;
+      text-align: center; color: #fff; -webkit-text-stroke: 9px #0B0B0B; paint-order: stroke fill;
+      letter-spacing: 1px; white-space: nowrap; text-shadow: 0 6px 0 rgba(0,0,0,.45); }
+.w { display: inline-block; margin: 0 7px; }
+.w.k { color: #39FF14; }
+
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920" data-layout-allow-safe-zone>
+    <div id="cg0" class="cg" data-s="9.3" data-e="9.98"><div class="cl"><span id="cw0" class="w k" data-s="9.3" data-e="9.66">MELUTUT,</span> <span id="cw1" class="w" data-s="9.66" data-e="9.98">PUSING</span></div></div>
+    <div id="cg1" class="cg" data-s="10.03" data-e="10.71"><div class="cl"><span id="cw2" class="w" data-s="10.03" data-e="10.39">KELILING</span> <span id="cw3" class="w k" data-s="10.39" data-e="10.71">KEPALA</span></div></div>
+    <div id="cg2" class="cg" data-s="19.3" data-e="19.94"><div class="cl"><span id="cw4" class="w" data-s="19.3" data-e="19.62">ANGKAT</span> <span id="cw5" class="w k" data-s="19.62" data-e="19.94">KAKI,</span></div></div>
+    <div id="cg3" class="cg" data-s="19.99" data-e="20.71"><div class="cl"><span id="cw6" class="w" data-s="19.99" data-e="20.31">LEPASI</span> <span id="cw7" class="w k" data-s="20.31" data-e="20.71">KETTLEBELL</span></div></div>
+    <div id="cg4" class="cg" data-s="29.3" data-e="29.94"><div class="cl"><span id="cw8" class="w" data-s="29.3" data-e="29.62">DUDUK,</span> <span id="cw9" class="w k" data-s="29.62" data-e="29.94">PUTAR</span></div></div>
+    <div id="cg5" class="cg" data-s="29.99" data-e="30.63"><div class="cl"><span id="cw10" class="w" data-s="29.99" data-e="30.31">KIRI</span> <span id="cw11" class="w" data-s="30.31" data-e="30.63">KANAN</span></div></div>
+    <div id="cg6" class="cg" data-s="39.4" data-e="40.36"><div class="cl"><span id="cw12" class="w k" data-s="39.4" data-e="39.72">PICIT</span> <span id="cw13" class="w" data-s="39.72" data-e="40.04">PUN</span> <span id="cw14" class="w" data-s="40.04" data-e="40.36">BOLEH!</span></div></div>
+  </div>
+  <script>
+    (function () {
+      // Each group: in at its first word, hard kill after its last word (or when the next group starts).
+      // Active word turns yellow; keywords stay neon green and pop while spoken.
+      const tl = gsap.timeline({ paused: true });
+      const groups = Array.from(document.querySelectorAll("[data-composition-id=captions] .cg"));
+      groups.forEach((g, i) => {
+        const s = parseFloat(g.dataset.s), e = parseFloat(g.dataset.e);
+        const next = groups[i + 1] ? parseFloat(groups[i + 1].dataset.s) : Infinity;
+        const tIn = Math.max(0.05, s - 0.06);
+        const tOut = Math.min(e + 0.45, next - 0.04);
+        tl.fromTo(g, { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.1, ease: "back.out(2)" }, tIn);
+        tl.set(g, { opacity: 0, visibility: "hidden" }, tOut);
+        g.querySelectorAll(".w").forEach((w) => {
+          const ws = parseFloat(w.dataset.s), we = Math.min(parseFloat(w.dataset.e), tOut - 0.02);
+          if (w.classList.contains("k")) {
+            tl.fromTo(w, { scale: 1 }, { scale: 1.08, duration: 0.08, ease: "power2.out" }, ws);
+            tl.to(w, { scale: 1, duration: 0.12, ease: "power2.in" }, Math.max(ws + 0.09, we - 0.06));
+          } else {
+            tl.set(w, { color: "#FFE600" }, ws);
+            tl.set(w, { color: "#ffffff" }, Math.max(ws + 0.05, we));
+          }
+        });
+      });
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>
