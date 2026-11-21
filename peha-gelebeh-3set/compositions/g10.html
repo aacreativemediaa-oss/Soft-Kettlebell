@@ -1,0 +1,91 @@
+<template>
+  <style>
+@font-face { font-family: 'Anton'; src: url('assets/fonts/Anton-Regular.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Montserrat'; src: url('assets/fonts/Montserrat-Variable.woff2') format('woff2'); font-weight: 100 900; }
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+/* Social safe area (TikTok + Reels + Shorts): y 288-1248; x 120-888 above y 840, x 120-780 below.
+   Lower-band blocks are left-aligned from x 120 and at most 660 px wide; .up blocks centre in 120-888. */
+.row { position: absolute; left: 120px; width: 660px; display: flex; justify-content: flex-start; align-items: center; gap: 22px; }
+.col { position: absolute; left: 120px; width: 660px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.row.up, .col.up { left: 120px; width: 768px; justify-content: center; align-items: center; }
+.hd { font-family: 'Anton', sans-serif; text-transform: uppercase; line-height: 1.02; color: #fff;
+      -webkit-text-stroke: 12px #0B0B0B; paint-order: stroke fill; letter-spacing: 1px; white-space: nowrap;
+      text-shadow: 0 10px 0 rgba(0,0,0,.35); opacity: 0; }
+.hero { font-size: 140px; }
+.head { font-size: 112px; }
+.sub { font-size: 84px; -webkit-text-stroke-width: 10px; }
+.y { color: #FFE600; } .g { color: #39FF14; } .p { color: #FF3D8B; }
+.pill { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 36px; letter-spacing: 1px;
+        text-transform: uppercase; color: #0B0B0B; background: #FFE600; border: 5px solid #0B0B0B;
+        border-radius: 999px; padding: 12px 30px; box-shadow: 0 8px 0 #0B0B0B; white-space: nowrap;
+        display: flex; align-items: center; gap: 14px; opacity: 0; }
+.pill.dark { background: rgba(11,11,11,.88); color: #fff; border-color: #fff; box-shadow: 0 8px 0 rgba(0,0,0,.5); }
+.pill.green { background: #39FF14; }
+.pill.pink { background: #FF3D8B; color: #fff; }
+.pill.white { background: #fff; }
+.badge { width: 150px; height: 150px; border-radius: 50%; background: #FF3D8B; border: 8px solid #0B0B0B;
+         box-shadow: 0 10px 0 #0B0B0B; display: flex; align-items: center; justify-content: center;
+         font-family: 'Anton', sans-serif; font-size: 84px; color: #fff; opacity: 0; flex: none; }
+.card { background: rgba(11,11,11,.86); border: 5px solid #fff; border-radius: 34px; padding: 30px 38px;
+        box-shadow: 0 14px 0 rgba(0,0,0,.45); opacity: 0; }
+.lbl { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 36px; color: #fff;
+       text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+svg { display: block; }
+
+.row:not(.up) .hd, .col:not(.up) .hd { transform-origin: 0% 50%; }
+.col.up > .hd { transform-origin: 50% 0%; }
+.lbs { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 40px; color: #fff; text-transform: uppercase;
+       letter-spacing: 1px; white-space: nowrap; -webkit-text-stroke: 8px #0B0B0B; paint-order: stroke fill; opacity: 0; }
+.anat { background: #fff; border: 6px solid #0B0B0B; border-radius: 24px; padding: 10px 10px 8px; box-shadow: 0 10px 0 rgba(0,0,0,.4);
+        display: flex; flex-direction: column; align-items: center; opacity: 0; }
+.anat .t { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 28px; color: #0B0B0B; text-transform: uppercase; margin-top: 6px; }
+.anat .c { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 15px; color: #666; }
+.diag { background: #fff; border: 6px solid #0B0B0B; border-radius: 26px; padding: 10px; box-shadow: 0 10px 0 rgba(0,0,0,.4); opacity: 0; }
+
+.h150 { font-size: 150px; line-height: 0.98; }
+.s70 { font-size: 70px; line-height: 1.05; -webkit-text-stroke-width: 9px; }
+
+  </style>
+  <div id="root" data-composition-id="g10" data-width="1080" data-height="1920" data-layout-allow-overlap>
+    <div class="col" style="top: 318px; width: 768px; gap: 0;">
+      
+      <div id="g10-t1" class="hd h150">NAK PEHA</div>
+      <div id="g10-t2" class="hd h150 p">CANTIK?</div>
+    </div>
+    <div class="row" style="top: 690px;">
+      <div id="g10-btn" style="opacity:0; background:#FFE600; border: 8px solid #0B0B0B; border-radius: 36px; padding: 18px 30px 20px;
+           box-shadow: 0 14px 0 #0B0B0B; display:flex; flex-direction:column;">
+        <div class="lbl" style="color:#0B0B0B; font-size: 36px;">Start buat</div>
+        <div class="hd head" style="opacity:1; color:#0B0B0B; -webkit-text-stroke:0; text-shadow:none;">3 LATIHAN NI</div>
+        <div class="lbl" style="color:#0B0B0B; font-size: 36px;">sekarang!</div>
+      </div>
+    </div>
+    <div class="row" style="top: 1020px;">
+      <div id="g10-link" class="pill white" style="font-size: 30px;"><svg width="46" height="41" viewBox="0 0 96 86"><path d="M4 8 H18 L28 58 H80 L90 22 H22" fill="none" stroke="#0B0B0B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="76" r="7" fill="#0B0B0B"/><circle cx="74" cy="76" r="7" fill="#0B0B0B"/></svg>Kettlebell kat beg kuning</div>
+    </div>
+    <div style="position:absolute; left: 40px; top: 1390px; display:flex; flex-direction:column; align-items:flex-start;">
+      <div id="g10-a1" style="opacity:0"><svg width="110" height="70" viewBox="0 0 110 70"><path d="M10 10 L55 55 L100 10" fill="none" stroke="#FFE600" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div id="g10-a2" style="opacity:0; margin-top: -24px;"><svg width="110" height="70" viewBox="0 0 110 70"><path d="M10 10 L55 55 L100 10" fill="none" stroke="#FFE600" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      // Times below are written in film seconds; T(x) converts to this scene's clock.
+      const T0 = 43.6;
+      const T = (x) => +(x - T0).toFixed(4);
+      const END = T(49.0000);
+      const tl = gsap.timeline({ paused: true });
+      const q = (s) => "#g10-" + s;
+      tl.fromTo(q("t1"), { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }, T(43.85));
+      tl.fromTo(q("t2"), { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }, T(44.2));
+      tl.fromTo(q("btn"), { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.2)" }, T(45.0));
+      tl.fromTo(q("link"), { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.2)" }, T(45.6));
+      tl.fromTo([q("a1"), q("a2")], { opacity: 0, y: -30 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.08, ease: "expo.out" }, T(45.80));
+      tl.to([q("a1"), q("a2")], { y: 26, duration: 0.28, yoyo: true, repeat: 3, stagger: 0.08, ease: "sine.inOut" }, T(46.30));
+      tl.fromTo(q("btn"), { scale: 1 }, { scale: 1.07, duration: 0.12, yoyo: true, repeat: 1, ease: "power2.out" }, T(46.30));
+
+      window.__timelines["g10"] = tl;
+    })();
+  </script>
+</template>

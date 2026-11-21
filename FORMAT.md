@@ -10,7 +10,9 @@ Applies to every new edit. Each project folder (`video/`, `kelebihan-v2/`, `gele
 - iPhone HDR (HLG) footage is tone-mapped to SDR BT.709 in `tools/prep_footage.sh`; render with `--sdr`.
 
 ## Text
-- Anton for titles/captions, Montserrat for labels, at 70 % of the first version (140 / 112 / 84 / 36 px).
+- Anton for titles/captions, Montserrat for labels.
+- **Top headline 150 px, sub-headline 70 px** (Anton), from y ≈ 318 in the top band (x 120–888); long headlines split
+  over two 150 px lines rather than shrinking. Labels/pills stay Montserrat 36 px. (Older projects used 140/112/84.)
 - Captions 60 px, uppercase, black stroke, active word yellow, keywords neon green, 2–3 words, centre-bottom.
 - No overlap: when a graphic shows a clause, that clause has no caption.
 - No "Kettlebell di rumah" tag on the hook. Fact images only from free sources (Gray's Anatomy, PubChem, Wikimedia with credit).
