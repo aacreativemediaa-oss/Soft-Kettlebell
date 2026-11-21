@@ -15,3 +15,8 @@ Follows `../FORMAT.md` (no voiceover): 1080×1920, 60 fps, 56.0 s, 9 clips, head
   halos 12.40 / 14.70 / 16.90 s (kettlebell behind the head), leg raise 22.30 … 27.75 s (each pass over the kettlebell),
   twist 31.90 … 37.35 s (each side touch). Measured with `tools/track_color.py` (kettlebell / shoe path) + 4 fps strips.
 - USP split in three: lembut (squeeze), tak pecah / tak sakit (drop test, shake on both hits), pilihan berat (real cards).
+
+## Client changes
+- Reps text on one line, "10 REPS × 3 SET", same width as "SETIAP LATIHAN" (both 70 px Anton ≈ 410 px).
+- Rest timer number counts down 1:00 → 0:00 over each exercise clip (≈ 6 s), in step with the ring.
+- Kept warning: `line_unread` on each count — the number changes on every rep by design.

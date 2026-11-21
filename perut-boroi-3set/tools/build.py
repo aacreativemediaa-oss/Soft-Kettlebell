@@ -294,7 +294,7 @@ def tip_col(sid, rows):
 
 # Updated format: top headline 150 px, sub-headline 70 px (Anton).
 H_CSS = """
-.cbox { position: relative; display: inline-block; width: 470px; height: 1em; vertical-align: top; }
+.cbox { position: relative; display: inline-block; width: 430px; height: 1.05em; vertical-align: top; }
 .cnum { position: absolute; left: 0; top: 0; white-space: nowrap; transform-origin: 0% 60%; }
 .h150 { font-size: 150px; line-height: 0.98; }
 .s70 { font-size: 70px; line-height: 1.05; -webkit-text-stroke-width: 9px; }
@@ -327,7 +327,7 @@ TIMER_SVG = f"""<svg width="200" height="200" viewBox="0 0 230 230">
   <circle cx="115" cy="115" r="76" fill="none" stroke="#e6e6e6" stroke-width="20"/>
   <circle id="{{p}}-ring" cx="115" cy="115" r="76" fill="none" stroke="{GREEN}" stroke-width="20" stroke-linecap="round"
           stroke-dasharray="477.5" stroke-dashoffset="477.5" transform="rotate(-90 115 115)"/>
-  <text x="115" y="134" text-anchor="middle" font-family="Anton" font-size="62" fill="{INK}">1:00</text>
+  <text id="{{p}}-num" x="115" y="134" text-anchor="middle" font-family="Anton" font-size="62" fill="{INK}">1:00</text>
 </svg>"""
 
 
@@ -337,13 +337,21 @@ REPS = {1: [12.40, 14.70, 16.90], 2: [22.30, 23.25, 24.15, 25.10, 26.00, 26.90, 
 HEADER_END = 2.60   # exercise name shown for the first 2.6 s of each exercise clip, then the reps block
 
 
+# Reps line sized so "10 REPS × 3 SET" is as wide as the 70 px "SETIAP LATIHAN" above it
+# (measured with the real Anton font: 410 px each at 70 px).
+REPS_LINE_PX = 70
+
+
 def exercise_scene(sid, t0, t_end, n, l1, l2, img=None, title=None, w=118, an_left=556):
     counts = [10 - i for i in range(len(REPS[n]) + 1)]
-    lines = "".join(f'<span id="{sid}-n{c}" class="cnum" style="opacity:{1 if i == 0 else 0}">{c} REPS</span>' for i, c in enumerate(counts))
-    m = (top_block(sid, f"LATIHAN #{n}", l1, l2) + ("\n" + anat2(sid, img, title, w, an_left) if img else "")
-         + "\n" + top_block(sid + "r", "SETIAP LATIHAN", f'<span class="cbox">{lines}</span>', "&#215; 3 SET", top=1160,
-                            extra=" data-layout-allow-safe-zone") + f"""
-    <div style="position:absolute; left: 610px; top: 1210px;" data-layout-allow-safe-zone>
+    lines = "".join(f'<span id="{sid}-n{c}" class="cnum" style="opacity:{1 if i == 0 else 0}">{c} REPS <span class="g">&#215; 3 SET</span></span>'
+                    for i, c in enumerate(counts))
+    m = (top_block(sid, f"LATIHAN #{n}", l1, l2) + ("\n" + anat2(sid, img, title, w, an_left) if img else "") + f"""
+    <div class="col" style="top: 1262px; width: 460px; gap: 2px;" data-layout-allow-safe-zone>
+      <div id="{sid}r-s" class="hd s70 y">SETIAP LATIHAN</div>
+      <div id="{sid}r-t1" class="hd s70" style="font-size: {REPS_LINE_PX}px;"><span class="cbox">{lines}</span></div>
+    </div>
+    <div style="position:absolute; left: 590px; top: 1196px;" data-layout-allow-safe-zone>
       <div id="{sid}-tm" class="card" style="background:{YELLOW}; border-color:{INK}; padding: 14px 18px 12px; display:flex; flex-direction:column; align-items:center;">
         {TIMER_SVG.replace('{p}', sid)}
         <div class="lbl" style="color:{INK}; font-size: 36px; margin-top: 6px;">Rehat</div>
@@ -351,16 +359,22 @@ def exercise_scene(sid, t0, t_end, n, l1, l2, img=None, title=None, w=118, an_le
       </div>
     </div>""")
     h = t0 + HEADER_END
+    t_tm, d_tm = h + 1.0, t_end - h - 1.3   # timer runs 1:00 -> 0:00 over the rest of the exercise clip
     s = (blurin("s", t0 + 0.20) + slam("t1", t0 + 0.35) + slam("t2", t0 + 0.60, 1.4)
          + (slide("an", t0 + 1.00, 140) if img else "")
          + out(["s", "t1", "t2"] + (["an"] if img else []), h)
          + f'      tl.fromTo("#{sid}r-s", {{ opacity: 0, filter: "blur(14px)", y: 24 }}, {{ opacity: 1, filter: "blur(0px)", y: 0, duration: 0.2, ease: "power4.out" }}, T({h + 0.20:.2f}));\n'
-         + f'      tl.fromTo("#{sid}r-t1", {{ opacity: 0, scale: 1.6 }}, {{ opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }}, T({h + 0.25:.2f}));\n'
-         + f'      tl.fromTo("#{sid}r-t2", {{ opacity: 0, scale: 1.4 }}, {{ opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }}, T({h + 0.45:.2f}));\n'
+         + f'      tl.fromTo("#{sid}r-t1", {{ opacity: 0, scale: 1.4 }}, {{ opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }}, T({h + 0.30:.2f}));\n'
          + popin("tm", h + 0.70, 0.5)
-         + f'      tl.fromTo(q("ring"), {{ attr: {{ "stroke-dashoffset": 477.5 }} }}, {{ attr: {{ "stroke-dashoffset": 0 }}, duration: {t_end - h - 1.3:.2f}, ease: "none" }}, T({h + 1.0:.2f}));\n'
-         + f'      tl.to(["#{sid}r-s", "#{sid}r-t1", "#{sid}r-t2", q("tm")], {{ opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }}, T({t_end - 0.18:.2f}));\n'
-         + f'      tl.set(["#{sid}r-s", "#{sid}r-t1", "#{sid}r-t2", q("tm")], {{ opacity: 0 }}, T({t_end - 0.01:.2f}));\n')
+         + f'      tl.fromTo(q("ring"), {{ attr: {{ "stroke-dashoffset": 477.5 }} }}, {{ attr: {{ "stroke-dashoffset": 0 }}, duration: {d_tm:.2f}, ease: "none" }}, T({t_tm:.2f}));\n'
+         + f'''      (function () {{
+        const el = document.querySelector("#{sid}-num"), o = {{ v: 60 }};
+        const show = () => {{ const n = Math.ceil(o.v - 1e-6); el.textContent = n >= 60 ? "1:00" : "0:" + String(n).padStart(2, "0"); }};
+        tl.fromTo(o, {{ v: 60 }}, {{ v: 0, duration: {d_tm:.2f}, ease: "none", onUpdate: show, onStart: show, onComplete: show }}, T({t_tm:.2f}));
+      }})();
+'''
+         + f'      tl.to(["#{sid}r-s", "#{sid}r-t1", q("tm")], {{ opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }}, T({t_end - 0.18:.2f}));\n'
+         + f'      tl.set(["#{sid}r-s", "#{sid}r-t1", q("tm")], {{ opacity: 0 }}, T({t_end - 0.01:.2f}));\n')
     for i, t in enumerate(REPS[n]):
         a, b = counts[i], counts[i + 1]
         s += (f'      tl.set(q("n{a}"), {{ opacity: 0 }}, T({t:.2f}));\n'

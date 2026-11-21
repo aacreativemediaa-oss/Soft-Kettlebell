@@ -13,8 +13,9 @@ Applies to every new edit. Each project folder (`video/`, `kelebihan-v2/`, `gele
 - Anton for titles/captions, Montserrat for labels.
 - **Top headline 150 px, sub-headline 70 px** (Anton), from y ≈ 318 in the top band (x 120–888); long headlines split
   over two 150 px lines rather than shrinking. Labels/pills stay Montserrat 36 px. (Older projects used 140/112/84.)
-- "10 reps × 3 set" scenes: reps block (sub 70 + 2 × 150 px) bottom-left from y ≈ 1160 and the 1:00 rest timer
-  bottom-right, over the legs — not at the top (client layout).
+- "10 reps × 3 set" block bottom-left, over the legs (client layout): sub-headline "SETIAP LATIHAN" 70 px and **one line
+  "10 REPS × 3 SET" sized to the same width** (70 px Anton, measured with the real font). 1:00 rest timer bottom-right;
+  its number **counts down 1:00 → 0:00** together with the ring over the exercise clip.
 - Live rep counter: the "10 REPS" number counts down (10 → 9 → 8…) on each real rep in the clip — squat/lunge at
   the bottom, swing when the kettlebell reaches chest height — with a yellow punch and a soft pop. Rep moments are
   measured with `tools/rep_times.py` (head height) and checked on a 4 fps strip; a rep in the first ~1 s, while the

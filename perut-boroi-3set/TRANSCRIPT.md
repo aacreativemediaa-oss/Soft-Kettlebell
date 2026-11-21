@@ -7,7 +7,7 @@ Headline atas 150 px, sub-headline 70 px.
 |---|---|---|---|---|
 | 0.0–4.2 | Hook (satu shot) + mini CTA | IMG_2768 (goblet squat) | **PERUT / BOROI?** · BUAT **3** SENAMAN NI · butang *Save video sebelum hilang* | — |
 | 4.2–8.4 | Masalah | IMG_2777 (melutut) | PERUT BOROI? · **BAJU MAHAL / TAK KEMAS** ✕ · kad *Pakai baju mahal pun nampak tak kemas* | — |
-| 8.4–18.4 | #1 Kneeling Halos | IMG_2772 | LATIHAN #1 · **KNEELING / HALOS** → SETIAP LATIHAN · **10 REPS** (kaunter 10→7) **× 3 SET** · pemasa 1:00 rehat | MELUTUT, PUSING / KELILING KEPALA |
+| 8.4–18.4 | #1 Kneeling Halos | IMG_2772 | LATIHAN #1 · **KNEELING / HALOS** → SETIAP LATIHAN · **10 REPS × 3 SET** satu baris (kaunter 10→7) · pemasa 1:00 → 0:00 | MELUTUT, PUSING / KELILING KEPALA |
 | 18.4–28.4 | #2 Side to Side Leg Raise | IMG_2775 | LATIHAN #2 · **SIDE TO SIDE / LEG RAISE** · *Sasar: perut depan* → 10 REPS (10→3) × 3 SET · 1:00 | ANGKAT KAKI, / LEPASI KETTLEBELL |
 | 28.4–38.4 | #3 Russian Twist | IMG_2774 | LATIHAN #3 · **RUSSIAN / TWIST** · *Sasar: perut sisi* → 10 REPS (10→4) × 3 SET · 1:00 | DUDUK, PUTAR / KIRI KANAN |
 | 38.4–41.4 | USP | video_20260523_100816 (picit 8KG) | MATERIAL · **LEMBUT** · Soft kettlebell | PICIT PUN BOLEH! |
