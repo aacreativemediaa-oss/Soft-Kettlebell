@@ -11,16 +11,27 @@ Applies to every new edit. Each project folder (`video/`, `kelebihan-v2/`, `gele
 
 ## Text
 - Anton for titles/captions, Montserrat for labels.
-- **Top headline 150 px, sub-headline 70 px** (Anton), from y ≈ 318 in the top band (x 120–888); long headlines split
-  over two 150 px lines rather than shrinking. Labels/pills stay Montserrat 36 px. (Older projects used 140/112/84.)
-- "10 reps × 3 set" block bottom-left, over the legs (client layout): sub-headline "SETIAP LATIHAN" 70 px and **one line
-  "10 REPS × 3 SET" sized to the same width** (70 px Anton, measured with the real font). 1:00 rest timer bottom-right;
+- **Text sizes (from 22 Nov 2026, client update — everything at 2/3 of the previous scale):**
+
+  | Text | Before | Now |
+  |---|---|---|
+  | Headline (Anton) | 150 px | **100 px** |
+  | Sub-headline / save sticker ("Save/Repost video…") | 70 px | **47 px** |
+  | Caption (Anton) | 60 px | **40 px** |
+  | Heart-rate number | 96 px | **64 px** |
+  | Chip, colour name, zone label (Montserrat) | 28 px | **19 px** |
+
+  Sizes not in the table follow the same ×2/3 rule (e.g. pills 36 → 24 px, CTA button title 112 → 75 px, kettlebell
+  weight labels 36 → 24 px, timer number 62 → 41 px). Headlines sit from y ≈ 318 in the top band (x 120–888); long
+  headlines split over two lines rather than shrinking further. (Older projects: 140/112/84, then 150/70.)
+- "10 reps × 3 set" block bottom-left, over the legs (client layout): sub-headline "SETIAP LATIHAN" 47 px and **one line
+  "10 REPS × 3 SET" sized to the same width** (47 px Anton, measured with the real font). 1:00 rest timer bottom-right;
   its number **counts down 1:00 → 0:00** together with the ring over the exercise clip.
 - Live rep counter: the "10 REPS" number counts down (10 → 9 → 8…) on each real rep in the clip — squat/lunge at
   the bottom, swing when the kettlebell reaches chest height — with a yellow punch and a soft pop. Rep moments are
   measured with `tools/rep_times.py` (head height) and checked on a 4 fps strip; a rep in the first ~1 s, while the
   block is still arriving, is not counted.
-- Captions 60 px, uppercase, black stroke, active word yellow, keywords neon green, 2–3 words, centre-bottom.
+- Captions 40 px, uppercase, black stroke, active word yellow, keywords neon green, 2–3 words, centre-bottom.
 - No overlap: when a graphic shows a clause, that clause has no caption.
 - No "Kettlebell di rumah" tag on the hook. Fact images only from free sources (Gray's Anatomy, PubChem, Wikimedia with credit).
 
