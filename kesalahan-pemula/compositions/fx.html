@@ -1,0 +1,34 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    #fx-flash { position: absolute; inset: 0; background: #ffffff; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="fx" data-width="1080" data-height="1920" data-layout-ignore>
+    <div id="fx-flash"></div>
+  </div>
+  <script>
+    (function () {
+      // White flash on every cut: 2 frames up, 0.2 s down.
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none" }, 4.166);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 4.200);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 8.966);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 9.000);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 15.966);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 16.000);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 20.966);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 21.000);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 26.966);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 27.000);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 31.966);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 32.000);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 36.566);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 36.600);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 41.166);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 41.200);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 45.766);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 45.800);
+      window.__timelines["fx"] = tl;
+    })();
+  </script>
+</template>
