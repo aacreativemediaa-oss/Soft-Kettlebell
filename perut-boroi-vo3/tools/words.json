@@ -1,0 +1,1778 @@
+[
+ {
+  "text": "SIAPA",
+  "start": 0.0,
+  "end": 0.34,
+  "punct": false,
+  "id": "w0",
+  "key": false
+ },
+ {
+  "text": "YANG",
+  "start": 0.34,
+  "end": 0.44,
+  "punct": false,
+  "id": "w1",
+  "key": false
+ },
+ {
+  "text": "ADA",
+  "start": 0.44,
+  "end": 0.54,
+  "punct": false,
+  "id": "w2",
+  "key": false
+ },
+ {
+  "text": "PERUT",
+  "start": 0.54,
+  "end": 0.74,
+  "punct": false,
+  "id": "w3",
+  "key": false
+ },
+ {
+  "text": "BOROI",
+  "start": 0.74,
+  "end": 0.98,
+  "punct": false,
+  "id": "w4",
+  "key": true
+ },
+ {
+  "text": "TU",
+  "start": 0.98,
+  "end": 1.14,
+  "punct": true,
+  "id": "w5",
+  "key": false
+ },
+ {
+  "text": "INI",
+  "start": 1.22,
+  "end": 1.54,
+  "punct": false,
+  "id": "w6",
+  "key": false
+ },
+ {
+  "text": "3",
+  "start": 1.54,
+  "end": 1.74,
+  "punct": false,
+  "id": "w7",
+  "key": false
+ },
+ {
+  "text": "SENAMAN",
+  "start": 1.74,
+  "end": 1.98,
+  "punct": false,
+  "id": "w8",
+  "key": false
+ },
+ {
+  "text": "SIMPLE",
+  "start": 1.98,
+  "end": 2.32,
+  "punct": false,
+  "id": "w9",
+  "key": false
+ },
+ {
+  "text": "YANG",
+  "start": 2.32,
+  "end": 2.7,
+  "punct": false,
+  "id": "w10",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 2.7,
+  "end": 2.92,
+  "punct": false,
+  "id": "w11",
+  "key": false
+ },
+ {
+  "text": "BOLEH",
+  "start": 2.92,
+  "end": 3.02,
+  "punct": false,
+  "id": "w12",
+  "key": false
+ },
+ {
+  "text": "BUAT",
+  "start": 3.02,
+  "end": 3.14,
+  "punct": false,
+  "id": "w13",
+  "key": false
+ },
+ {
+  "text": "KAT",
+  "start": 3.14,
+  "end": 3.2,
+  "punct": false,
+  "id": "w14",
+  "key": false
+ },
+ {
+  "text": "RUMAH",
+  "start": 3.2,
+  "end": 3.38,
+  "punct": false,
+  "id": "w15",
+  "key": false
+ },
+ {
+  "text": "JE",
+  "start": 3.38,
+  "end": 3.6,
+  "punct": true,
+  "id": "w16",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 4.048,
+  "end": 4.14,
+  "punct": false,
+  "id": "w17",
+  "key": false
+ },
+ {
+  "text": "SAVE",
+  "start": 4.14,
+  "end": 4.32,
+  "punct": false,
+  "id": "w18",
+  "key": false
+ },
+ {
+  "text": "DULU",
+  "start": 4.32,
+  "end": 4.48,
+  "punct": false,
+  "id": "w19",
+  "key": false
+ },
+ {
+  "text": "VIDEO",
+  "start": 4.48,
+  "end": 4.74,
+  "punct": false,
+  "id": "w20",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 4.74,
+  "end": 4.92,
+  "punct": false,
+  "id": "w21",
+  "key": false
+ },
+ {
+  "text": "SEBELUM",
+  "start": 4.92,
+  "end": 5.26,
+  "punct": false,
+  "id": "w22",
+  "key": false
+ },
+ {
+  "text": "DIA",
+  "start": 5.26,
+  "end": 5.34,
+  "punct": false,
+  "id": "w23",
+  "key": false
+ },
+ {
+  "text": "HILANG",
+  "start": 5.34,
+  "end": 5.62,
+  "punct": true,
+  "id": "w24",
+  "key": false
+ },
+ {
+  "text": "OK",
+  "start": 6.176,
+  "end": 6.28,
+  "punct": true,
+  "id": "w25",
+  "key": false
+ },
+ {
+  "text": "LATIHAN",
+  "start": 6.34,
+  "end": 6.56,
+  "punct": false,
+  "id": "w26",
+  "key": false
+ },
+ {
+  "text": "YANG",
+  "start": 6.56,
+  "end": 6.64,
+  "punct": false,
+  "id": "w27",
+  "key": false
+ },
+ {
+  "text": "PERTAMA",
+  "start": 6.64,
+  "end": 6.82,
+  "punct": true,
+  "id": "w28",
+  "key": false
+ },
+ {
+  "text": "LATIHAN",
+  "start": 7.12,
+  "end": 7.74,
+  "punct": false,
+  "id": "w29",
+  "key": false
+ },
+ {
+  "text": "KNEELING",
+  "start": 7.74,
+  "end": 8.0,
+  "punct": false,
+  "id": "w30",
+  "key": false
+ },
+ {
+  "text": "HALOS",
+  "start": 8.0,
+  "end": 8.4,
+  "punct": true,
+  "id": "w31",
+  "key": false
+ },
+ {
+  "text": "LATIHAN",
+  "start": 8.6,
+  "end": 9.04,
+  "punct": false,
+  "id": "w32",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 9.04,
+  "end": 9.12,
+  "punct": false,
+  "id": "w33",
+  "key": false
+ },
+ {
+  "text": "EASY",
+  "start": 9.12,
+  "end": 9.3,
+  "punct": false,
+  "id": "w34",
+  "key": true
+ },
+ {
+  "text": "JE",
+  "start": 9.3,
+  "end": 9.52,
+  "punct": true,
+  "id": "w35",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 10.219,
+  "end": 10.34,
+  "punct": false,
+  "id": "w36",
+  "key": false
+ },
+ {
+  "text": "MELUTUT",
+  "start": 10.34,
+  "end": 10.64,
+  "punct": false,
+  "id": "w37",
+  "key": true
+ },
+ {
+  "text": "MACAM",
+  "start": 10.64,
+  "end": 10.76,
+  "punct": false,
+  "id": "w38",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 10.76,
+  "end": 11.08,
+  "punct": true,
+  "id": "w39",
+  "key": false
+ },
+ {
+  "text": "LEPAS",
+  "start": 11.18,
+  "end": 11.64,
+  "punct": false,
+  "id": "w40",
+  "key": false
+ },
+ {
+  "text": "TU",
+  "start": 11.64,
+  "end": 11.78,
+  "punct": false,
+  "id": "w41",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 11.78,
+  "end": 11.92,
+  "punct": false,
+  "id": "w42",
+  "key": false
+ },
+ {
+  "text": "PUSINGKAN",
+  "start": 11.92,
+  "end": 12.3,
+  "punct": false,
+  "id": "w43",
+  "key": true
+ },
+ {
+  "text": "KETTLEBELL",
+  "start": 12.3,
+  "end": 12.64,
+  "punct": false,
+  "id": "w44",
+  "key": true
+ },
+ {
+  "text": "NI",
+  "start": 12.64,
+  "end": 12.78,
+  "punct": false,
+  "id": "w45",
+  "key": false
+ },
+ {
+  "text": "DEKAT",
+  "start": 12.78,
+  "end": 13.16,
+  "punct": false,
+  "id": "w46",
+  "key": false
+ },
+ {
+  "text": "BELAKANG",
+  "start": 13.16,
+  "end": 13.4,
+  "punct": false,
+  "id": "w47",
+  "key": false
+ },
+ {
+  "text": "KEPALA",
+  "start": 13.4,
+  "end": 13.74,
+  "punct": false,
+  "id": "w48",
+  "key": true
+ },
+ {
+  "text": "DAN",
+  "start": 13.74,
+  "end": 13.94,
+  "punct": false,
+  "id": "w49",
+  "key": false
+ },
+ {
+  "text": "BAWA",
+  "start": 14.386,
+  "end": 14.66,
+  "punct": false,
+  "id": "w50",
+  "key": false
+ },
+ {
+  "text": "DIA",
+  "start": 14.66,
+  "end": 14.76,
+  "punct": false,
+  "id": "w51",
+  "key": false
+ },
+ {
+  "text": "SAMPAI",
+  "start": 14.76,
+  "end": 15.02,
+  "punct": false,
+  "id": "w52",
+  "key": false
+ },
+ {
+  "text": "KE",
+  "start": 15.02,
+  "end": 15.16,
+  "punct": false,
+  "id": "w53",
+  "key": false
+ },
+ {
+  "text": "SISI",
+  "start": 15.16,
+  "end": 15.4,
+  "punct": false,
+  "id": "w54",
+  "key": true
+ },
+ {
+  "text": "BADAN",
+  "start": 15.4,
+  "end": 15.68,
+  "punct": false,
+  "id": "w55",
+  "key": true
+ },
+ {
+  "text": "MACAM",
+  "start": 15.68,
+  "end": 15.86,
+  "punct": false,
+  "id": "w56",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 15.86,
+  "end": 16.04,
+  "punct": true,
+  "id": "w57",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 16.1,
+  "end": 16.5,
+  "punct": false,
+  "id": "w58",
+  "key": false
+ },
+ {
+  "text": "ULANG",
+  "start": 16.5,
+  "end": 16.72,
+  "punct": false,
+  "id": "w59",
+  "key": false
+ },
+ {
+  "text": "DUA-DUA",
+  "start": 16.72,
+  "end": 16.92,
+  "punct": false,
+  "id": "w60",
+  "key": false
+ },
+ {
+  "text": "ARAH",
+  "start": 16.92,
+  "end": 17.18,
+  "punct": false,
+  "id": "w61",
+  "key": false
+ },
+ {
+  "text": "MACAM",
+  "start": 17.18,
+  "end": 17.32,
+  "punct": false,
+  "id": "w62",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 17.32,
+  "end": 17.56,
+  "punct": false,
+  "id": "w63",
+  "key": false
+ },
+ {
+  "text": "SAMPAI",
+  "start": 17.56,
+  "end": 17.96,
+  "punct": false,
+  "id": "w64",
+  "key": false
+ },
+ {
+  "text": "CUKUP",
+  "start": 17.96,
+  "end": 18.34,
+  "punct": false,
+  "id": "w65",
+  "key": false
+ },
+ {
+  "text": "10",
+  "start": 18.34,
+  "end": 18.44,
+  "punct": false,
+  "id": "w66",
+  "key": false
+ },
+ {
+  "text": "KALI",
+  "start": 18.44,
+  "end": 18.68,
+  "punct": true,
+  "id": "w67",
+  "key": false
+ },
+ {
+  "text": "OK",
+  "start": 19.393,
+  "end": 19.5,
+  "punct": true,
+  "id": "w68",
+  "key": false
+ },
+ {
+  "text": "LATIHAN",
+  "start": 19.58,
+  "end": 19.84,
+  "punct": false,
+  "id": "w69",
+  "key": false
+ },
+ {
+  "text": "YANG",
+  "start": 19.84,
+  "end": 19.96,
+  "punct": false,
+  "id": "w70",
+  "key": false
+ },
+ {
+  "text": "KEDUA",
+  "start": 19.96,
+  "end": 20.32,
+  "punct": true,
+  "id": "w71",
+  "key": false
+ },
+ {
+  "text": "LATIHAN",
+  "start": 20.44,
+  "end": 21.22,
+  "punct": false,
+  "id": "w72",
+  "key": false
+ },
+ {
+  "text": "RUSSIAN",
+  "start": 21.22,
+  "end": 21.5,
+  "punct": false,
+  "id": "w73",
+  "key": false
+ },
+ {
+  "text": "TWIST",
+  "start": 21.5,
+  "end": 21.9,
+  "punct": true,
+  "id": "w74",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 22.14,
+  "end": 22.56,
+  "punct": false,
+  "id": "w75",
+  "key": false
+ },
+ {
+  "text": "DUDUK",
+  "start": 22.56,
+  "end": 22.76,
+  "punct": false,
+  "id": "w76",
+  "key": false
+ },
+ {
+  "text": "ATAS",
+  "start": 22.76,
+  "end": 22.98,
+  "punct": false,
+  "id": "w77",
+  "key": false
+ },
+ {
+  "text": "YOGA",
+  "start": 22.98,
+  "end": 23.1,
+  "punct": false,
+  "id": "w78",
+  "key": true
+ },
+ {
+  "text": "MAT",
+  "start": 23.1,
+  "end": 23.38,
+  "punct": true,
+  "id": "w79",
+  "key": true
+ },
+ {
+  "text": "PEGANG",
+  "start": 24.1,
+  "end": 24.24,
+  "punct": false,
+  "id": "w80",
+  "key": false
+ },
+ {
+  "text": "KETTLEBELL",
+  "start": 24.24,
+  "end": 24.54,
+  "punct": false,
+  "id": "w81",
+  "key": true
+ },
+ {
+  "text": "MACAM",
+  "start": 24.54,
+  "end": 24.72,
+  "punct": false,
+  "id": "w82",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 24.72,
+  "end": 24.9,
+  "punct": false,
+  "id": "w83",
+  "key": false
+ },
+ {
+  "text": "DENGAN",
+  "start": 24.9,
+  "end": 25.02,
+  "punct": false,
+  "id": "w84",
+  "key": false
+ },
+ {
+  "text": "KEMAS",
+  "start": 25.02,
+  "end": 25.48,
+  "punct": true,
+  "id": "w85",
+  "key": true
+ },
+ {
+  "text": "LEPAS",
+  "start": 26.061,
+  "end": 26.121,
+  "punct": false,
+  "id": "w86",
+  "key": false
+ },
+ {
+  "text": "TU",
+  "start": 26.12,
+  "end": 26.28,
+  "punct": false,
+  "id": "w87",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 26.28,
+  "end": 26.44,
+  "punct": false,
+  "id": "w88",
+  "key": false
+ },
+ {
+  "text": "PUSINGKAN",
+  "start": 26.44,
+  "end": 26.82,
+  "punct": false,
+  "id": "w89",
+  "key": true
+ },
+ {
+  "text": "BADAN",
+  "start": 26.82,
+  "end": 26.92,
+  "punct": false,
+  "id": "w90",
+  "key": true
+ },
+ {
+  "text": "KORANG",
+  "start": 26.92,
+  "end": 27.3,
+  "punct": false,
+  "id": "w91",
+  "key": false
+ },
+ {
+  "text": "KE",
+  "start": 27.3,
+  "end": 27.4,
+  "punct": false,
+  "id": "w92",
+  "key": false
+ },
+ {
+  "text": "KIRI",
+  "start": 27.4,
+  "end": 27.62,
+  "punct": false,
+  "id": "w93",
+  "key": true
+ },
+ {
+  "text": "DAN",
+  "start": 27.62,
+  "end": 27.7,
+  "punct": false,
+  "id": "w94",
+  "key": false
+ },
+ {
+  "text": "KANAN",
+  "start": 27.7,
+  "end": 27.94,
+  "punct": false,
+  "id": "w95",
+  "key": true
+ },
+ {
+  "text": "MACAM",
+  "start": 27.94,
+  "end": 28.1,
+  "punct": false,
+  "id": "w96",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 28.1,
+  "end": 28.3,
+  "punct": true,
+  "id": "w97",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 28.3,
+  "end": 28.88,
+  "punct": false,
+  "id": "w98",
+  "key": false
+ },
+ {
+  "text": "ULANG",
+  "start": 28.88,
+  "end": 29.1,
+  "punct": false,
+  "id": "w99",
+  "key": false
+ },
+ {
+  "text": "PERGERAKAN",
+  "start": 29.1,
+  "end": 29.52,
+  "punct": false,
+  "id": "w100",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 29.52,
+  "end": 29.7,
+  "punct": false,
+  "id": "w101",
+  "key": false
+ },
+ {
+  "text": "SEBANYAK",
+  "start": 29.7,
+  "end": 30.02,
+  "punct": false,
+  "id": "w102",
+  "key": false
+ },
+ {
+  "text": "10",
+  "start": 30.02,
+  "end": 30.16,
+  "punct": false,
+  "id": "w103",
+  "key": false
+ },
+ {
+  "text": "KALI",
+  "start": 30.16,
+  "end": 30.44,
+  "punct": false,
+  "id": "w104",
+  "key": false
+ },
+ {
+  "text": "UNTUK",
+  "start": 30.44,
+  "end": 30.7,
+  "punct": false,
+  "id": "w105",
+  "key": false
+ },
+ {
+  "text": "SETIAP",
+  "start": 30.7,
+  "end": 31.02,
+  "punct": false,
+  "id": "w106",
+  "key": false
+ },
+ {
+  "text": "ARAH",
+  "start": 31.02,
+  "end": 31.301,
+  "punct": true,
+  "id": "w107",
+  "key": false
+ },
+ {
+  "text": "DAN",
+  "start": 32.066,
+  "end": 32.126,
+  "punct": false,
+  "id": "w108",
+  "key": false
+ },
+ {
+  "text": "LATIHAN",
+  "start": 32.066,
+  "end": 32.34,
+  "punct": false,
+  "id": "w109",
+  "key": false
+ },
+ {
+  "text": "YANG",
+  "start": 32.34,
+  "end": 32.44,
+  "punct": false,
+  "id": "w110",
+  "key": false
+ },
+ {
+  "text": "KETIGA",
+  "start": 32.44,
+  "end": 32.86,
+  "punct": true,
+  "id": "w111",
+  "key": false
+ },
+ {
+  "text": "LATIHAN",
+  "start": 32.94,
+  "end": 33.48,
+  "punct": false,
+  "id": "w112",
+  "key": false
+ },
+ {
+  "text": "SIDE",
+  "start": 33.48,
+  "end": 33.8,
+  "punct": false,
+  "id": "w113",
+  "key": false
+ },
+ {
+  "text": "TO",
+  "start": 33.8,
+  "end": 33.96,
+  "punct": false,
+  "id": "w114",
+  "key": false
+ },
+ {
+  "text": "SIDE",
+  "start": 33.96,
+  "end": 34.16,
+  "punct": false,
+  "id": "w115",
+  "key": false
+ },
+ {
+  "text": "LEG",
+  "start": 34.16,
+  "end": 34.44,
+  "punct": false,
+  "id": "w116",
+  "key": false
+ },
+ {
+  "text": "RAISE",
+  "start": 34.44,
+  "end": 34.72,
+  "punct": true,
+  "id": "w117",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 35.436,
+  "end": 35.496,
+  "punct": false,
+  "id": "w118",
+  "key": false
+ },
+ {
+  "text": "LETAK",
+  "start": 35.46,
+  "end": 35.7,
+  "punct": false,
+  "id": "w119",
+  "key": false
+ },
+ {
+  "text": "KETTLEBELL",
+  "start": 35.7,
+  "end": 36.0,
+  "punct": false,
+  "id": "w120",
+  "key": true
+ },
+ {
+  "text": "DEKAT",
+  "start": 36.0,
+  "end": 36.1,
+  "punct": false,
+  "id": "w121",
+  "key": false
+ },
+ {
+  "text": "KAKI",
+  "start": 36.1,
+  "end": 36.52,
+  "punct": true,
+  "id": "w122",
+  "key": true
+ },
+ {
+  "text": "LEVEL",
+  "start": 36.56,
+  "end": 36.82,
+  "punct": false,
+  "id": "w123",
+  "key": false
+ },
+ {
+  "text": "BETIS",
+  "start": 36.82,
+  "end": 37.24,
+  "punct": false,
+  "id": "w124",
+  "key": true
+ },
+ {
+  "text": "MACAM",
+  "start": 37.24,
+  "end": 37.36,
+  "punct": false,
+  "id": "w125",
+  "key": false
+ },
+ {
+  "text": "TU",
+  "start": 37.36,
+  "end": 37.64,
+  "punct": true,
+  "id": "w126",
+  "key": false
+ },
+ {
+  "text": "LEPAS",
+  "start": 38.253,
+  "end": 38.34,
+  "punct": false,
+  "id": "w127",
+  "key": false
+ },
+ {
+  "text": "TU",
+  "start": 38.34,
+  "end": 38.44,
+  "punct": false,
+  "id": "w128",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 38.44,
+  "end": 38.6,
+  "punct": false,
+  "id": "w129",
+  "key": false
+ },
+ {
+  "text": "ANGKAT",
+  "start": 38.6,
+  "end": 38.82,
+  "punct": false,
+  "id": "w130",
+  "key": false
+ },
+ {
+  "text": "KAKI",
+  "start": 38.82,
+  "end": 39.16,
+  "punct": false,
+  "id": "w131",
+  "key": true
+ },
+ {
+  "text": "MELEPASI",
+  "start": 39.16,
+  "end": 39.52,
+  "punct": false,
+  "id": "w132",
+  "key": true
+ },
+ {
+  "text": "KETTLEBELL",
+  "start": 39.52,
+  "end": 40.06,
+  "punct": false,
+  "id": "w133",
+  "key": true
+ },
+ {
+  "text": "KE",
+  "start": 40.06,
+  "end": 40.32,
+  "punct": false,
+  "id": "w134",
+  "key": false
+ },
+ {
+  "text": "KIRI",
+  "start": 40.32,
+  "end": 40.58,
+  "punct": false,
+  "id": "w135",
+  "key": true
+ },
+ {
+  "text": "DAN",
+  "start": 40.58,
+  "end": 40.68,
+  "punct": false,
+  "id": "w136",
+  "key": false
+ },
+ {
+  "text": "KANAN",
+  "start": 40.68,
+  "end": 40.92,
+  "punct": false,
+  "id": "w137",
+  "key": true
+ },
+ {
+  "text": "MACAM",
+  "start": 40.92,
+  "end": 41.08,
+  "punct": false,
+  "id": "w138",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 41.08,
+  "end": 41.3,
+  "punct": true,
+  "id": "w139",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 41.728,
+  "end": 41.8,
+  "punct": false,
+  "id": "w140",
+  "key": false
+ },
+ {
+  "text": "ULANG",
+  "start": 41.8,
+  "end": 42.04,
+  "punct": false,
+  "id": "w141",
+  "key": false
+ },
+ {
+  "text": "SEBANYAK",
+  "start": 42.04,
+  "end": 42.28,
+  "punct": false,
+  "id": "w142",
+  "key": false
+ },
+ {
+  "text": "10",
+  "start": 42.28,
+  "end": 42.44,
+  "punct": false,
+  "id": "w143",
+  "key": false
+ },
+ {
+  "text": "KALI",
+  "start": 42.44,
+  "end": 42.7,
+  "punct": false,
+  "id": "w144",
+  "key": false
+ },
+ {
+  "text": "UNTUK",
+  "start": 42.7,
+  "end": 43.0,
+  "punct": false,
+  "id": "w145",
+  "key": false
+ },
+ {
+  "text": "SETIAP",
+  "start": 43.0,
+  "end": 43.3,
+  "punct": false,
+  "id": "w146",
+  "key": false
+ },
+ {
+  "text": "ARAH",
+  "start": 43.3,
+  "end": 43.62,
+  "punct": true,
+  "id": "w147",
+  "key": false
+ },
+ {
+  "text": "YANG",
+  "start": 44.128,
+  "end": 44.188,
+  "punct": false,
+  "id": "w148",
+  "key": false
+ },
+ {
+  "text": "BAGUS",
+  "start": 44.14,
+  "end": 44.4,
+  "punct": false,
+  "id": "w149",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 44.4,
+  "end": 44.52,
+  "punct": false,
+  "id": "w150",
+  "key": false
+ },
+ {
+  "text": "KETTLEBELL",
+  "start": 44.52,
+  "end": 44.86,
+  "punct": false,
+  "id": "w151",
+  "key": true
+ },
+ {
+  "text": "NI",
+  "start": 44.86,
+  "end": 45.04,
+  "punct": true,
+  "id": "w152",
+  "key": false
+ },
+ {
+  "text": "DIA",
+  "start": 45.1,
+  "end": 45.16,
+  "punct": false,
+  "id": "w153",
+  "key": false
+ },
+ {
+  "text": "JENIS",
+  "start": 45.633,
+  "end": 45.82,
+  "punct": false,
+  "id": "w154",
+  "key": false
+ },
+ {
+  "text": "LEMBUT",
+  "start": 45.82,
+  "end": 46.08,
+  "punct": false,
+  "id": "w155",
+  "key": false
+ },
+ {
+  "text": "TAU",
+  "start": 46.08,
+  "end": 46.26,
+  "punct": true,
+  "id": "w156",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 46.36,
+  "end": 46.78,
+  "punct": false,
+  "id": "w157",
+  "key": false
+ },
+ {
+  "text": "TAK",
+  "start": 46.78,
+  "end": 46.84,
+  "punct": false,
+  "id": "w158",
+  "key": false
+ },
+ {
+  "text": "PERLU",
+  "start": 46.84,
+  "end": 46.98,
+  "punct": false,
+  "id": "w159",
+  "key": false
+ },
+ {
+  "text": "RISAU",
+  "start": 46.98,
+  "end": 47.28,
+  "punct": false,
+  "id": "w160",
+  "key": false
+ },
+ {
+  "text": "KALAU",
+  "start": 47.28,
+  "end": 47.38,
+  "punct": false,
+  "id": "w161",
+  "key": false
+ },
+ {
+  "text": "TERJATUH",
+  "start": 47.38,
+  "end": 47.82,
+  "punct": false,
+  "id": "w162",
+  "key": false
+ },
+ {
+  "text": "ATAUPUN",
+  "start": 47.82,
+  "end": 48.04,
+  "punct": false,
+  "id": "w163",
+  "key": false
+ },
+ {
+  "text": "TERKENA",
+  "start": 48.04,
+  "end": 48.26,
+  "punct": false,
+  "id": "w164",
+  "key": false
+ },
+ {
+  "text": "KAKI",
+  "start": 48.26,
+  "end": 48.56,
+  "punct": true,
+  "id": "w165",
+  "key": true
+ },
+ {
+  "text": "MEMANG",
+  "start": 48.68,
+  "end": 49.2,
+  "punct": false,
+  "id": "w166",
+  "key": false
+ },
+ {
+  "text": "TAK",
+  "start": 49.2,
+  "end": 49.28,
+  "punct": false,
+  "id": "w167",
+  "key": false
+ },
+ {
+  "text": "SAKIT",
+  "start": 49.28,
+  "end": 49.58,
+  "punct": false,
+  "id": "w168",
+  "key": false
+ },
+ {
+  "text": "LANGSUNG",
+  "start": 49.58,
+  "end": 49.96,
+  "punct": false,
+  "id": "w169",
+  "key": false
+ },
+ {
+  "text": "DAN",
+  "start": 49.96,
+  "end": 50.118,
+  "punct": false,
+  "id": "w170",
+  "key": false
+ },
+ {
+  "text": "TAKKAN",
+  "start": 50.483,
+  "end": 50.7,
+  "punct": false,
+  "id": "w171",
+  "key": false
+ },
+ {
+  "text": "PECAH",
+  "start": 50.7,
+  "end": 51.0,
+  "punct": false,
+  "id": "w172",
+  "key": false
+ },
+ {
+  "text": "PUNYA",
+  "start": 51.0,
+  "end": 51.16,
+  "punct": true,
+  "id": "w173",
+  "key": false
+ },
+ {
+  "text": "BANYAK",
+  "start": 51.782,
+  "end": 51.94,
+  "punct": false,
+  "id": "w174",
+  "key": false
+ },
+ {
+  "text": "LAGI",
+  "start": 51.94,
+  "end": 52.08,
+  "punct": false,
+  "id": "w175",
+  "key": false
+ },
+ {
+  "text": "SENAMAN",
+  "start": 52.08,
+  "end": 52.44,
+  "punct": false,
+  "id": "w176",
+  "key": false
+ },
+ {
+  "text": "YANG",
+  "start": 52.44,
+  "end": 52.66,
+  "punct": false,
+  "id": "w177",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 52.66,
+  "end": 52.86,
+  "punct": false,
+  "id": "w178",
+  "key": false
+ },
+ {
+  "text": "BOLEH",
+  "start": 52.86,
+  "end": 52.96,
+  "punct": false,
+  "id": "w179",
+  "key": false
+ },
+ {
+  "text": "BUAT",
+  "start": 52.96,
+  "end": 53.06,
+  "punct": false,
+  "id": "w180",
+  "key": false
+ },
+ {
+  "text": "DENGAN",
+  "start": 53.06,
+  "end": 53.16,
+  "punct": false,
+  "id": "w181",
+  "key": false
+ },
+ {
+  "text": "KETTLEBELL",
+  "start": 53.16,
+  "end": 53.56,
+  "punct": false,
+  "id": "w182",
+  "key": true
+ },
+ {
+  "text": "NI",
+  "start": 53.56,
+  "end": 53.64,
+  "punct": false,
+  "id": "w183",
+  "key": false
+ },
+ {
+  "text": "TAU",
+  "start": 53.64,
+  "end": 53.76,
+  "punct": true,
+  "id": "w184",
+  "key": false
+ },
+ {
+  "text": "NAK",
+  "start": 54.308,
+  "end": 54.368,
+  "punct": false,
+  "id": "w185",
+  "key": false
+ },
+ {
+  "text": "LATIH",
+  "start": 54.34,
+  "end": 54.62,
+  "punct": false,
+  "id": "w186",
+  "key": false
+ },
+ {
+  "text": "UPPER",
+  "start": 54.62,
+  "end": 54.72,
+  "punct": false,
+  "id": "w187",
+  "key": true
+ },
+ {
+  "text": "BODY",
+  "start": 54.72,
+  "end": 55.08,
+  "punct": false,
+  "id": "w188",
+  "key": true
+ },
+ {
+  "text": "BOLEH",
+  "start": 55.08,
+  "end": 55.24,
+  "punct": true,
+  "id": "w189",
+  "key": false
+ },
+ {
+  "text": "NAK",
+  "start": 55.5,
+  "end": 55.88,
+  "punct": false,
+  "id": "w190",
+  "key": false
+ },
+ {
+  "text": "LATIH",
+  "start": 55.88,
+  "end": 56.08,
+  "punct": false,
+  "id": "w191",
+  "key": false
+ },
+ {
+  "text": "OTOT",
+  "start": 56.08,
+  "end": 56.24,
+  "punct": false,
+  "id": "w192",
+  "key": true
+ },
+ {
+  "text": "KAKI",
+  "start": 56.24,
+  "end": 56.56,
+  "punct": false,
+  "id": "w193",
+  "key": true
+ },
+ {
+  "text": "PUN",
+  "start": 56.56,
+  "end": 56.64,
+  "punct": false,
+  "id": "w194",
+  "key": false
+ },
+ {
+  "text": "BOLEH",
+  "start": 56.64,
+  "end": 56.88,
+  "punct": true,
+  "id": "w195",
+  "key": false
+ },
+ {
+  "text": "HARGA",
+  "start": 57.479,
+  "end": 57.68,
+  "punct": false,
+  "id": "w196",
+  "key": false
+ },
+ {
+  "text": "PUN",
+  "start": 57.68,
+  "end": 57.78,
+  "punct": false,
+  "id": "w197",
+  "key": false
+ },
+ {
+  "text": "TENGAH",
+  "start": 57.78,
+  "end": 57.9,
+  "punct": false,
+  "id": "w198",
+  "key": false
+ },
+ {
+  "text": "MURAH",
+  "start": 57.9,
+  "end": 58.18,
+  "punct": true,
+  "id": "w199",
+  "key": true
+ },
+ {
+  "text": "SEKARANG",
+  "start": 58.3,
+  "end": 58.5,
+  "punct": false,
+  "id": "w200",
+  "key": false
+ },
+ {
+  "text": "NI",
+  "start": 58.5,
+  "end": 58.6,
+  "punct": true,
+  "id": "w201",
+  "key": false
+ },
+ {
+  "text": "RUGI",
+  "start": 58.7,
+  "end": 59.24,
+  "punct": false,
+  "id": "w202",
+  "key": true
+ },
+ {
+  "text": "KORANG",
+  "start": 59.24,
+  "end": 59.44,
+  "punct": false,
+  "id": "w203",
+  "key": false
+ },
+ {
+  "text": "TAK",
+  "start": 59.44,
+  "end": 59.5,
+  "punct": false,
+  "id": "w204",
+  "key": false
+ },
+ {
+  "text": "GRAB",
+  "start": 59.5,
+  "end": 59.7,
+  "punct": false,
+  "id": "w205",
+  "key": true
+ },
+ {
+  "text": "CEPAT",
+  "start": 59.7,
+  "end": 60.04,
+  "punct": true,
+  "id": "w206",
+  "key": true
+ },
+ {
+  "text": "SO",
+  "start": 60.06,
+  "end": 60.38,
+  "punct": false,
+  "id": "w207",
+  "key": false
+ },
+ {
+  "text": "SEBELUM",
+  "start": 60.38,
+  "end": 60.66,
+  "punct": false,
+  "id": "w208",
+  "key": false
+ },
+ {
+  "text": "WARNA",
+  "start": 60.66,
+  "end": 60.9,
+  "punct": false,
+  "id": "w209",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 60.9,
+  "end": 61.08,
+  "punct": false,
+  "id": "w210",
+  "key": false
+ },
+ {
+  "text": "MINAT",
+  "start": 61.08,
+  "end": 61.2,
+  "punct": false,
+  "id": "w211",
+  "key": false
+ },
+ {
+  "text": "TU",
+  "start": 61.2,
+  "end": 61.26,
+  "punct": false,
+  "id": "w212",
+  "key": false
+ },
+ {
+  "text": "HABIS",
+  "start": 61.26,
+  "end": 61.74,
+  "punct": true,
+  "id": "w213",
+  "key": false
+ },
+ {
+  "text": "BETTER",
+  "start": 61.76,
+  "end": 62.22,
+  "punct": false,
+  "id": "w214",
+  "key": false
+ },
+ {
+  "text": "KORANG",
+  "start": 62.22,
+  "end": 62.42,
+  "punct": false,
+  "id": "w215",
+  "key": false
+ },
+ {
+  "text": "CHECK",
+  "start": 62.42,
+  "end": 62.56,
+  "punct": false,
+  "id": "w216",
+  "key": false
+ },
+ {
+  "text": "OUT",
+  "start": 62.56,
+  "end": 62.7,
+  "punct": false,
+  "id": "w217",
+  "key": false
+ },
+ {
+  "text": "SEKARANG",
+  "start": 62.7,
+  "end": 62.88,
+  "punct": false,
+  "id": "w218",
+  "key": false
+ },
+ {
+  "text": "DEKAT",
+  "start": 62.88,
+  "end": 63.08,
+  "punct": false,
+  "id": "w219",
+  "key": false
+ },
+ {
+  "text": "BEG",
+  "start": 63.08,
+  "end": 63.22,
+  "punct": false,
+  "id": "w220",
+  "key": false
+ },
+ {
+  "text": "KUNING",
+  "start": 63.22,
+  "end": 63.48,
+  "punct": true,
+  "id": "w221",
+  "key": false
+ }
+]
