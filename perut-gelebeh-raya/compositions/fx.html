@@ -1,0 +1,30 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    #fx-flash { position: absolute; inset: 0; background: #ffffff; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="fx" data-width="1080" data-height="1920" data-layout-ignore>
+    <div id="fx-flash"></div>
+  </div>
+  <script>
+    (function () {
+      // White flash on every cut: 2 frames up, 0.2 s down.
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none" }, 4.966);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 5.000);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 16.966);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 17.000);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 28.966);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 29.000);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 40.966);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 41.000);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 47.466);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 47.500);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 50.466);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 50.500);
+      tl.fromTo("#fx-flash", { opacity: 0 }, { opacity: 0.92, duration: 0.034, ease: "none", immediateRender: false }, 55.066);
+      tl.to("#fx-flash", { opacity: 0, duration: 0.2, ease: "power2.out" }, 55.100);
+      window.__timelines["fx"] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,144 @@
+<template>
+  <style>
+@font-face { font-family: 'Anton'; src: url('assets/fonts/Anton-Regular.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Montserrat'; src: url('assets/fonts/Montserrat-Variable.woff2') format('woff2'); font-weight: 100 900; }
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+/* Social safe area (TikTok + Reels + Shorts): y 288-1248; x 120-888 above y 840, x 120-780 below.
+   Lower-band blocks are left-aligned from x 120 and at most 660 px wide; .up blocks centre in 120-888. */
+.row { position: absolute; left: 120px; width: 660px; display: flex; justify-content: flex-start; align-items: center; gap: 22px; }
+.col { position: absolute; left: 120px; width: 660px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.row.up, .col.up { left: 120px; width: 768px; justify-content: center; align-items: center; }
+.hd { font-family: 'Anton', sans-serif; text-transform: uppercase; line-height: 1.02; color: #fff;
+      -webkit-text-stroke: 8px #0B0B0B; paint-order: stroke fill; letter-spacing: 1px; white-space: nowrap;
+      text-shadow: 0 10px 0 rgba(0,0,0,.35); opacity: 0; }
+.hero { font-size: 93px; }
+.head { font-size: 75px; }
+.sub { font-size: 56px; -webkit-text-stroke-width: 10px; }
+.y { color: #FFE600; } .g { color: #39FF14; } .p { color: #FF3D8B; }
+.pill { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: 1px;
+        text-transform: uppercase; color: #0B0B0B; background: #FFE600; border: 5px solid #0B0B0B;
+        border-radius: 999px; padding: 12px 30px; box-shadow: 0 8px 0 #0B0B0B; white-space: nowrap;
+        display: flex; align-items: center; gap: 14px; opacity: 0; }
+.pill.dark { background: rgba(11,11,11,.88); color: #fff; border-color: #fff; box-shadow: 0 8px 0 rgba(0,0,0,.5); }
+.pill.green { background: #39FF14; }
+.pill.pink { background: #FF3D8B; color: #fff; }
+.pill.white { background: #fff; }
+.badge { width: 150px; height: 150px; border-radius: 50%; background: #FF3D8B; border: 8px solid #0B0B0B;
+         box-shadow: 0 10px 0 #0B0B0B; display: flex; align-items: center; justify-content: center;
+         font-family: 'Anton', sans-serif; font-size: 56px; color: #fff; opacity: 0; flex: none; }
+.card { background: rgba(11,11,11,.86); border: 5px solid #fff; border-radius: 34px; padding: 30px 38px;
+        box-shadow: 0 14px 0 rgba(0,0,0,.45); opacity: 0; }
+.lbl { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 24px; color: #fff;
+       text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+svg { display: block; }
+
+.row:not(.up) .hd, .col:not(.up) .hd { transform-origin: 0% 50%; }
+.col.up > .hd { transform-origin: 50% 0%; }
+.lbs { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 40px; color: #fff; text-transform: uppercase;
+       letter-spacing: 1px; white-space: nowrap; -webkit-text-stroke: 8px #0B0B0B; paint-order: stroke fill; opacity: 0; }
+.anat { background: #fff; border: 6px solid #0B0B0B; border-radius: 24px; padding: 10px 10px 8px; box-shadow: 0 10px 0 rgba(0,0,0,.4);
+        display: flex; flex-direction: column; align-items: center; opacity: 0; }
+.anat .t { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 28px; color: #0B0B0B; text-transform: uppercase; margin-top: 6px; }
+.anat .c { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 15px; color: #666; }
+.diag { background: #fff; border: 6px solid #0B0B0B; border-radius: 26px; padding: 10px; box-shadow: 0 10px 0 rgba(0,0,0,.4); opacity: 0; }
+
+.cbox { position: relative; display: inline-block; width: 300px; height: 1.08em; vertical-align: top; }
+.cnum { position: absolute; left: 0; top: 0; white-space: nowrap; transform-origin: 0% 60%; }
+.h150 { font-size: 100px; line-height: 1.0; }
+.s70 { font-size: 47px; line-height: 1.08; -webkit-text-stroke-width: 6px; }
+.anat .t { font-size: 19px !important; }
+.anat .c { font-size: 11px !important; }
+
+.chip { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 1px; text-transform: uppercase;
+        color: #0B0B0B; background: #FFE600; border: 3px solid #0B0B0B; border-radius: 999px; padding: 5px 14px; white-space: nowrap; }
+.pill { font-size: 24px; padding: 9px 22px; border-width: 4px; box-shadow: 0 6px 0 #0B0B0B; gap: 10px; }
+.card { padding: 16px 20px; border-radius: 22px; border-width: 4px; }
+.lbl { font-size: 24px; }
+
+  </style>
+  <div id="root" data-composition-id="g02" data-width="1080" data-height="1920" data-layout-allow-overlap>
+    <div class="col" style="top: 318px; width: 768px; gap: 0;">
+      <div id="g02-s" class="hd s70 y">LATIHAN #1</div>
+      <div id="g02-t1" class="hd h150">RUSSIAN</div>
+      <div id="g02-t2" class="hd h150 g">TWIST</div>
+    </div>
+    <div style="position:absolute; left: 700px; top: 560px;">
+      <div id="g02-an" class="anat" style="padding: 8px 8px 6px; border-width: 4px; border-radius: 18px;">
+        <div style="display:flex; gap: 4px;"><img src="assets/images/gray392-oblique.png" alt="" style="display:block; width: 96px;"></div>
+        <div class="t">Otot bekerja:</div><div class="t" style="margin-top:0; color:#FF3D8B;">Perut sisi<br>(obliques)</div>
+        <div class="c" data-layout-ignore>Gray's Anatomy (domain awam)</div>
+      </div>
+    </div>
+    <div class="col" style="top: 1262px; width: 330px; gap: 2px;" data-layout-allow-safe-zone>
+      <div id="g02r-s" class="hd s70 y">SETIAP LATIHAN</div>
+      <div id="g02r-t1" class="hd s70" style="font-size: 47px;"><span class="cbox"><span id="g02-n12" class="cnum" style="opacity:1">12 REPS <span class="g">&#215; 3 SET</span></span><span id="g02-n11" class="cnum" style="opacity:0">11 REPS <span class="g">&#215; 3 SET</span></span><span id="g02-n10" class="cnum" style="opacity:0">10 REPS <span class="g">&#215; 3 SET</span></span><span id="g02-n9" class="cnum" style="opacity:0">9 REPS <span class="g">&#215; 3 SET</span></span><span id="g02-n8" class="cnum" style="opacity:0">8 REPS <span class="g">&#215; 3 SET</span></span><span id="g02-n7" class="cnum" style="opacity:0">7 REPS <span class="g">&#215; 3 SET</span></span><span id="g02-n6" class="cnum" style="opacity:0">6 REPS <span class="g">&#215; 3 SET</span></span><span id="g02-n5" class="cnum" style="opacity:0">5 REPS <span class="g">&#215; 3 SET</span></span><span id="g02-n4" class="cnum" style="opacity:0">4 REPS <span class="g">&#215; 3 SET</span></span></span></div>
+    </div>
+    <div style="position:absolute; left: 500px; top: 1214px;" data-layout-allow-safe-zone>
+      <div id="g02-tm" class="card" style="background:#FFE600; border-color:#0B0B0B; padding: 10px 14px 8px; display:flex; flex-direction:column; align-items:center;">
+        <svg width="134" height="134" viewBox="0 0 230 230">
+  <circle cx="115" cy="115" r="92" fill="#ffffff" stroke="#0B0B0B" stroke-width="8"/>
+  <circle cx="115" cy="115" r="76" fill="none" stroke="#e6e6e6" stroke-width="20"/>
+  <circle id="g02-ring" cx="115" cy="115" r="76" fill="none" stroke="#39FF14" stroke-width="20" stroke-linecap="round"
+          stroke-dasharray="477.5" stroke-dashoffset="477.5" transform="rotate(-90 115 115)"/>
+  <text id="g02-num" x="115" y="134" text-anchor="middle" font-family="Anton" font-size="62" fill="#0B0B0B">1:00</text>
+</svg>
+        <div class="lbl" style="color:#0B0B0B; font-size: 24px; margin-top: 4px;">Rehat</div>
+        <div class="lbl" style="color:#0B0B0B; font-size: 19px; font-weight: 700;">setiap set</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      // Times below are written in film seconds; T(x) converts to this scene's clock.
+      const T0 = 5.0;
+      const T = (x) => +(x - T0).toFixed(4);
+      const END = T(17.0000);
+      const tl = gsap.timeline({ paused: true });
+      const q = (s) => "#g02-" + s;
+      tl.fromTo(q("s"), { opacity: 0, filter: "blur(14px)", y: 24 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.2, ease: "power4.out" }, T(5.2));
+      tl.fromTo(q("t1"), { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }, T(5.35));
+      tl.fromTo(q("t2"), { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }, T(5.6));
+      tl.fromTo(q("an"), { opacity: 0, x: 140, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.38, ease: "expo.out" }, T(6.0));
+      tl.to([q("s"), q("t1"), q("t2")], { opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }, T(7.6));
+      tl.set([q("s"), q("t1"), q("t2")], { opacity: 0 }, T(7.770));
+      tl.fromTo("#g02r-s", { opacity: 0, filter: "blur(14px)", y: 24 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.2, ease: "power4.out" }, T(7.80));
+      tl.fromTo("#g02r-t1", { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.32, ease: "expo.out" }, T(7.90));
+      tl.fromTo(q("tm"), { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.2)" }, T(8.299999999999999));
+      tl.fromTo(q("ring"), { attr: { "stroke-dashoffset": 477.5 } }, { attr: { "stroke-dashoffset": 0 }, duration: 8.10, ease: "none" }, T(8.60));
+      (function () {
+        const el = document.querySelector("#g02-num"), o = { v: 60 };
+        const show = () => { const n = Math.ceil(o.v - 1e-6); el.textContent = n >= 60 ? "1:00" : "0:" + String(n).padStart(2, "0"); };
+        tl.fromTo(o, { v: 60 }, { v: 0, duration: 8.10, ease: "none", onUpdate: show, onStart: show, onComplete: show }, T(8.60));
+      })();
+      tl.to(["#g02r-s", "#g02r-t1", q("tm"), q("an")], { opacity: 0, filter: "blur(10px)", scale: 0.92, duration: 0.16, ease: "power2.in" }, T(16.82));
+      tl.set(["#g02r-s", "#g02r-t1", q("tm"), q("an")], { opacity: 0 }, T(16.99));
+      tl.set(q("n12"), { opacity: 0 }, T(9.00));
+      tl.set(q("n11"), { opacity: 1 }, T(9.00));
+      tl.fromTo(q("n11"), { scale: 1.45, color: "#FFE600" }, { scale: 1, color: "#ffffff", duration: 0.35, ease: "back.out(2)", immediateRender: false }, T(9.00));
+      tl.set(q("n11"), { opacity: 0 }, T(10.00));
+      tl.set(q("n10"), { opacity: 1 }, T(10.00));
+      tl.fromTo(q("n10"), { scale: 1.45, color: "#FFE600" }, { scale: 1, color: "#ffffff", duration: 0.35, ease: "back.out(2)", immediateRender: false }, T(10.00));
+      tl.set(q("n10"), { opacity: 0 }, T(11.10));
+      tl.set(q("n9"), { opacity: 1 }, T(11.10));
+      tl.fromTo(q("n9"), { scale: 1.45, color: "#FFE600" }, { scale: 1, color: "#ffffff", duration: 0.35, ease: "back.out(2)", immediateRender: false }, T(11.10));
+      tl.set(q("n9"), { opacity: 0 }, T(12.20));
+      tl.set(q("n8"), { opacity: 1 }, T(12.20));
+      tl.fromTo(q("n8"), { scale: 1.45, color: "#FFE600" }, { scale: 1, color: "#ffffff", duration: 0.35, ease: "back.out(2)", immediateRender: false }, T(12.20));
+      tl.set(q("n8"), { opacity: 0 }, T(13.30));
+      tl.set(q("n7"), { opacity: 1 }, T(13.30));
+      tl.fromTo(q("n7"), { scale: 1.45, color: "#FFE600" }, { scale: 1, color: "#ffffff", duration: 0.35, ease: "back.out(2)", immediateRender: false }, T(13.30));
+      tl.set(q("n7"), { opacity: 0 }, T(14.40));
+      tl.set(q("n6"), { opacity: 1 }, T(14.40));
+      tl.fromTo(q("n6"), { scale: 1.45, color: "#FFE600" }, { scale: 1, color: "#ffffff", duration: 0.35, ease: "back.out(2)", immediateRender: false }, T(14.40));
+      tl.set(q("n6"), { opacity: 0 }, T(15.50));
+      tl.set(q("n5"), { opacity: 1 }, T(15.50));
+      tl.fromTo(q("n5"), { scale: 1.45, color: "#FFE600" }, { scale: 1, color: "#ffffff", duration: 0.35, ease: "back.out(2)", immediateRender: false }, T(15.50));
+      tl.set(q("n5"), { opacity: 0 }, T(16.55));
+      tl.set(q("n4"), { opacity: 1 }, T(16.55));
+      tl.fromTo(q("n4"), { scale: 1.45, color: "#FFE600" }, { scale: 1, color: "#ffffff", duration: 0.35, ease: "back.out(2)", immediateRender: false }, T(16.55));
+
+      window.__timelines["g02"] = tl;
+    })();
+  </script>
+</template>
